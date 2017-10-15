@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "Content/Main.css",
+    "inputFile": "Content/Main.scss"
+  },
+  {
+    "outputFile": "Content/Neon.css",
+    "inputFile": "Content/Neon.scss"
+  },
+  {
+    "outputFile": "Content/Retro.css",
+    "inputFile": "Content/Retro.scss"
+  },
+  {
+    "outputFile": "Content/Light.css",
+    "inputFile": "Content/Light.scss"
+  },
+  {
+    "outputFile": "Content/Dark.css",
+    "inputFile": "Content/Dark.scss"
+  }
+]

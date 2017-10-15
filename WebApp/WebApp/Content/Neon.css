@@ -1,0 +1,38 @@
+﻿/* COLOURS */
+/* COMPONENTS */
+.pal-one {
+  color: #0E0B16; }
+
+.pal-two {
+  color: #A239CA; }
+
+.pal-three {
+  color: #4717F6; }
+
+.pal-four {
+  color: #E7DFDD; }
+
+.website-header h1 {
+  color: #0E0B16; }
+
+.website-header p {
+  color: #A239CA; }
+
+.btn-main {
+  border-radius: 30px;
+  margin: 9px 9px 9px 0;
+  padding: 9px 18px;
+  text-decoration: none !important;
+  color: #E7DFDD;
+  background-color: #4717F6;
+  border: 1px solid #4717F6; }
+
+.btn-inverse {
+  border-radius: 30px;
+  margin: 9px 9px 9px 0;
+  padding: 9px 18px;
+  text-decoration: none !important;
+  color: #4717F6;
+  background-color: #E7DFDD;
+  border: 1px solid #E7DFDD; }
+

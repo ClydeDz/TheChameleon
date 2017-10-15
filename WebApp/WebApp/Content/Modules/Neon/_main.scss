@@ -1,0 +1,35 @@
+﻿/* COLOURS */
+@import '../Colours/_neon.scss';
+
+/* COMPONENTS */
+@import "../Components/buttons";
+
+.pal-one{
+    color: $neon_void;
+}
+.pal-two{
+    color: $neon_fuschia;
+}
+.pal-three{
+    color: $neon_jewel;
+}
+.pal-four{
+    color: $neon_stark;
+}
+
+.website-header {
+    h1 {
+        color: $neon_void;
+    }
+    p {
+        color: $neon_fuschia;
+    }
+}
+
+.btn-main{
+    @include btn-main($neon_stark, $neon_jewel);
+}
+
+.btn-inverse{
+    @include btn-main($neon_jewel, $neon_stark);
+}

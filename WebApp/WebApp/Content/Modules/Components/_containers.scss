@@ -1,0 +1,17 @@
+﻿.wide-container {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+.half-col {
+    width: 49%;
+    margin: 0;
+    display: inline-block;
+}
+
+@mixin ctn-main ( $bg-color ) {
+    background-color: $bg-color;
+}

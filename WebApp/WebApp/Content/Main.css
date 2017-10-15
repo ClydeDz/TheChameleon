@@ -1,0 +1,67 @@
+﻿@import url(Vendor/bootstrap.min.css);
+/* COLOURS */
+/* COMPONENTS */
+.wide-container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+.half-col {
+  width: 49%;
+  margin: 0;
+  display: inline-block; }
+
+body {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.dl-horizontal dt {
+  white-space: normal; }
+
+input,
+select,
+textarea {
+  max-width: 280px; }
+
+/* WEBSITE HEADER */
+.website-icon {
+  border-radius: 60px;
+  width: 70px; }
+
+.website-header h1 {
+  font-family: sans-serif;
+  font-size: 7vh;
+  font-weight: 700; }
+
+/* THEME PICKER */
+.circle {
+  border-radius: 50%;
+  background: gray;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer; }
+  .circle > .part {
+    float: left;
+    width: 25%;
+    height: 100%; }
+  .circle.neon > .part_1 {
+    background: #0E0B16; }
+  .circle.neon > .part_2 {
+    background: #A239CA; }
+  .circle.neon > .part_3 {
+    background: #4717F6; }
+  .circle.neon > .part_4 {
+    background: #E7DFDD; }
+  .circle.retro > .part_1 {
+    background: #FEDC3D; }
+  .circle.retro > .part_2 {
+    background: #000000; }
+  .circle.retro > .part_3 {
+    background: #01abaa; }
+  .circle.retro > .part_4 {
+    background: #fea680; }
+

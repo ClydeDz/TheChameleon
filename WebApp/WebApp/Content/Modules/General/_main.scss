@@ -1,0 +1,90 @@
+﻿/* COLOURS */
+@import '../Colours/_retro.scss';
+@import '../Colours/_neon.scss';
+
+/* COMPONENTS */
+@import "../Components/_buttons";
+@import "../Components/_containers";
+
+body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.body-content {
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* WEBSITE HEADER */
+.website-icon{
+    border-radius: 60px;
+    width: 70px;
+}
+
+.website-header h1 {
+    font-family: sans-serif;
+    font-size: 7vh;
+    font-weight: 700;
+}
+
+/* THEME PICKER */
+.circle {
+    border-radius: 50%;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+
+    > .part {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    &.neon {
+        > .part_1 {
+            background: $neon_void;
+        }
+
+        > .part_2 {
+            background: $neon_fuschia;
+        }
+
+        > .part_3 {
+            background: $neon_jewel;
+        }
+
+        > .part_4 {
+            background: $neon_stark;
+        }
+    }
+
+    &.retro {
+        > .part_1 {
+            background: $retro_butter;
+        }
+
+        > .part_2 {
+            background: $retro_black;
+        }
+
+        > .part_3 {
+            background: $retro_azure;
+        }
+
+        > .part_4 {
+            background: $retro_peach;
+        }
+    }
+}

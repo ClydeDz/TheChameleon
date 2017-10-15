@@ -1,0 +1,41 @@
+﻿/* COLOURS */
+@import '../Colours/_retro.scss';
+
+/* COMPONENTS */
+@import "../Components/_buttons";
+@import "../Components/_containers";
+
+.pal-one{
+    color: $retro_azure;
+}
+.pal-two{
+    color: $retro_azure;
+}
+.pal-three{
+    color: $retro_azure;
+}
+.pal-four{
+    color: $retro_azure;
+}
+
+
+.website-header {
+    h1 {
+        color: $retro_azure;
+    }
+    p {
+        color: $retro_butter;
+    }
+}
+
+.btn-main{
+    @include btn-main($retro_butter, $retro_peach);
+}
+
+.btn-inverse{
+    @include btn-main($retro_peach, $retro_butter);
+}
+
+.ctn-main{
+    @include ctn-main($retro_peach);
+}

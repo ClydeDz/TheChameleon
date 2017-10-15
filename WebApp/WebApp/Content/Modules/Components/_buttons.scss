@@ -1,0 +1,20 @@
+﻿@mixin btn-generic{
+    border-radius: 30px;
+    margin: 9px 9px 9px 0;
+    padding: 9px 18px;
+    text-decoration: none !important;
+}
+
+@mixin btn-main ( $fg-color, $bg-color ) {
+    @include btn-generic;
+    color: $fg-color;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+}
+
+@mixin btn-inverse ( $fg-color, $bg-color ) {
+    @include btn-generic;
+    color: $fg-color;
+    background-color: $bg-color;
+    border: 1px solid $fg-color;
+}
