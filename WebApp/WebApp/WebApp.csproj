@@ -184,6 +184,10 @@
     <Content Include="Content\Modules\Colours\_retro.scss" />
     <Content Include="Content\Modules\Components\_buttons.scss" />
     <Content Include="Content\Modules\Components\_containers.scss" />
+    <Content Include="Content\Modules\General\_theme-picker.scss" />
+    <Content Include="Content\Modules\General\_containers.scss" />
+    <Content Include="Content\Modules\General\_buttons.scss" />
+    <Content Include="Content\Modules\General\_header.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

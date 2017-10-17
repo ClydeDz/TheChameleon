@@ -1,6 +1,20 @@
 ﻿@import url(Vendor/bootstrap.min.css);
 /* COLOURS */
 /* COMPONENTS */
+/* COMPONENTS */
+.btn-main {
+  border-radius: 30px;
+  margin: 9px 9px 9px 0;
+  padding: 9px 18px;
+  text-decoration: none !important; }
+
+.btn-inverse {
+  border-radius: 30px;
+  margin: 9px 9px 9px 0;
+  padding: 9px 18px;
+  text-decoration: none !important; }
+
+/* COMPONENTS */
 .wide-container {
   width: 100%;
   padding-left: 0;
@@ -13,29 +27,11 @@
   margin: 0;
   display: inline-block; }
 
-body {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+.colour-scheme {
+  display: inline-block;
+  min-height: 200px; }
 
-.dl-horizontal dt {
-  white-space: normal; }
-
-input,
-select,
-textarea {
-  max-width: 280px; }
-
-/* WEBSITE HEADER */
-.website-icon {
-  border-radius: 60px;
-  width: 70px; }
-
-.website-header h1 {
-  font-family: sans-serif;
-  font-size: 7vh;
-  font-weight: 700; }
-
-/* THEME PICKER */
+/* COLOURS */
 .circle {
   border-radius: 50%;
   background: gray;
@@ -43,7 +39,10 @@ textarea {
   height: 20px;
   overflow: hidden;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 9px; }
+  .circle:last-child {
+    margin-right: 0; }
   .circle > .part {
     float: left;
     width: 25%;
@@ -64,4 +63,26 @@ textarea {
     background: #01abaa; }
   .circle.retro > .part_4 {
     background: #fea680; }
+
+/* COMPONENTS */
+.website-icon {
+  border-radius: 60px;
+  width: 70px; }
+
+.website-header h1 {
+  font-family: sans-serif;
+  font-size: 7vh;
+  font-weight: 700; }
+
+body {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.dl-horizontal dt {
+  white-space: normal; }
+
+input,
+select,
+textarea {
+  max-width: 280px; }
 

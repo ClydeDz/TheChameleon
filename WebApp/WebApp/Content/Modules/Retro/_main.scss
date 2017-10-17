@@ -33,9 +33,10 @@
 }
 
 .btn-inverse{
-    @include btn-main($retro_peach, $retro_butter);
+    @include btn-inverse($retro_peach, $retro_butter);
 }
 
 .ctn-main{
     @include ctn-main($retro_peach);
 }
+

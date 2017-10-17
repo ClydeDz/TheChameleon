@@ -6,14 +6,12 @@
 }
 
 @mixin btn-main ( $fg-color, $bg-color ) {
-    @include btn-generic;
     color: $fg-color;
     background-color: $bg-color;
     border: 1px solid $bg-color;
 }
 
 @mixin btn-inverse ( $fg-color, $bg-color ) {
-    @include btn-generic;
     color: $fg-color;
     background-color: $bg-color;
     border: 1px solid $fg-color;

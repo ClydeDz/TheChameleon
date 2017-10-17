@@ -3,6 +3,7 @@
 
 /* COMPONENTS */
 @import "../Components/buttons";
+@import "../Components/_containers";
 
 .pal-one{
     color: $neon_void;
@@ -31,5 +32,24 @@
 }
 
 .btn-inverse{
-    @include btn-main($neon_jewel, $neon_stark);
+    @include btn-inverse($neon_jewel, $neon_stark);
+}
+
+.ctn-main{
+    @include ctn-main($neon_jewel);
+}
+
+.colour-scheme {
+    &.variant_1 {
+        @include colour-variant( $neon_fuschia );
+    }
+    &.variant_2 {
+        @include colour-variant( $neon_jewel );
+    }
+    &.variant_3 {
+        @include colour-variant( $neon_stark );
+    }
+    &.variant_4 {
+        @include colour-variant( $neon_void );
+    }
 }

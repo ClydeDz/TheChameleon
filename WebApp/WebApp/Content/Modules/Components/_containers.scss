@@ -1,4 +1,5 @@
-﻿.wide-container {
+﻿
+@mixin wide-container {
     width: 100%;
     padding-left:0;
     padding-right:0;
@@ -6,7 +7,7 @@
     margin-right:0;
 }
 
-.half-col {
+@mixin half-col {
     width: 49%;
     margin: 0;
     display: inline-block;
@@ -14,4 +15,32 @@
 
 @mixin ctn-main ( $bg-color ) {
     background-color: $bg-color;
+}
+
+@mixin colour-scheme {
+    display: inline-block;
+    min-height:200px;
+}
+
+@mixin colour-variant ( $bg-color ) {
+
+    background-color: $bg-color;
+    color: white;
+
+    p {
+       position: absolute;
+       bottom: 0;
+    }
+
+    p:before {
+        content: "" + $bg-color;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        padding: 9px 111px;
+        margin: 0;
+        position: relative;
+        left: -15px;
+        display: inline-block;
+        bottom: -29px;
+    }
 }

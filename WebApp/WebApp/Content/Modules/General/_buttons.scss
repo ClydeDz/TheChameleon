@@ -1,0 +1,10 @@
+﻿/* COMPONENTS */
+@import "../Components/_buttons";
+
+.btn-main{
+    @include btn-generic;
+}
+
+.btn-inverse{
+    @include btn-generic;
+}

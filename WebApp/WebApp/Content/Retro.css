@@ -1,17 +1,5 @@
 ﻿/* COLOURS */
 /* COMPONENTS */
-.wide-container {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0; }
-
-.half-col {
-  width: 49%;
-  margin: 0;
-  display: inline-block; }
-
 .pal-one {
   color: #01abaa; }
 
@@ -31,22 +19,14 @@
   color: #FEDC3D; }
 
 .btn-main {
-  border-radius: 30px;
-  margin: 9px 9px 9px 0;
-  padding: 9px 18px;
-  text-decoration: none !important;
   color: #FEDC3D;
   background-color: #fea680;
   border: 1px solid #fea680; }
 
 .btn-inverse {
-  border-radius: 30px;
-  margin: 9px 9px 9px 0;
-  padding: 9px 18px;
-  text-decoration: none !important;
   color: #fea680;
   background-color: #FEDC3D;
-  border: 1px solid #FEDC3D; }
+  border: 1px solid #fea680; }
 
 .ctn-main {
   background-color: #fea680; }

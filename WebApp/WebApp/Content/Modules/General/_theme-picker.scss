@@ -1,0 +1,60 @@
+﻿/* COLOURS */
+@import '../Colours/_retro.scss';
+@import '../Colours/_neon.scss';
+
+.circle {
+    border-radius: 50%;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 9px;
+
+    &:last-child{
+        margin-right:0;
+    }
+    
+    > .part {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    &.neon {
+        > .part_1 {
+            background: $neon_void;
+        }
+
+        > .part_2 {
+            background: $neon_fuschia;
+        }
+
+        > .part_3 {
+            background: $neon_jewel;
+        }
+
+        > .part_4 {
+            background: $neon_stark;
+        }
+    }
+
+    &.retro {
+        > .part_1 {
+            background: $retro_butter;
+        }
+
+        > .part_2 {
+            background: $retro_black;
+        }
+
+        > .part_3 {
+            background: $retro_azure;
+        }
+
+        > .part_4 {
+            background: $retro_peach;
+        }
+    }
+}
