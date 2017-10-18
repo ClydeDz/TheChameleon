@@ -30,4 +30,93 @@
 
 .ctn-main {
   background-color: #fea680; }
+  .ctn-main h2, .ctn-main h3, .ctn-main p {
+    color: white; }
+
+.colour-scheme.variant_1 {
+  background-color: #01abaa;
+  color: white; }
+  .colour-scheme.variant_1 p {
+    position: absolute;
+    bottom: 0; }
+  .colour-scheme.variant_1 p:before {
+    content: "#01abaa";
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 9px 116px;
+    margin: 0;
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    bottom: -29px;
+    text-transform: uppercase; }
+
+.colour-scheme.variant_2 {
+  background-color: #000000;
+  color: white; }
+  .colour-scheme.variant_2 p {
+    position: absolute;
+    bottom: 0; }
+  .colour-scheme.variant_2 p:before {
+    content: "#000000";
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 9px 116px;
+    margin: 0;
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    bottom: -29px;
+    text-transform: uppercase; }
+
+.colour-scheme.variant_3 {
+  background-color: #FEDC3D;
+  color: white; }
+  .colour-scheme.variant_3 p {
+    position: absolute;
+    bottom: 0; }
+  .colour-scheme.variant_3 p:before {
+    content: "#FEDC3D";
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 9px 116px;
+    margin: 0;
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    bottom: -29px;
+    text-transform: uppercase; }
+
+.colour-scheme.variant_4 {
+  background-color: #fea680;
+  color: white; }
+  .colour-scheme.variant_4 p {
+    position: absolute;
+    bottom: 0; }
+  .colour-scheme.variant_4 p:before {
+    content: "#fea680";
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 9px 116px;
+    margin: 0;
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    bottom: -29px;
+    text-transform: uppercase; }
+
+footer {
+  background-color: #000000;
+  color: #fea680; }
+
+.slide:before, .slide:after {
+  color: #fea680; }
+
+#slider-nav a {
+  color: #fea680;
+  border: 1px solid #01abaa;
+  background-color: #01abaa; }
+  #slider-nav a.current {
+    border-color: #fea680;
+    background-color: #fea680; }
 

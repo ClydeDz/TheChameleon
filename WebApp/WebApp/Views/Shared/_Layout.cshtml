@@ -6,16 +6,32 @@
     <title>@ViewBag.Title - The Chameleon</title>
     
     <link type="text/css" rel="stylesheet" media="all" href="~/Content/Main.min.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="~/Content/Neon.min.css" id="CssTheme" />
+    <link type="text/css" rel="stylesheet" media="all" href="~/Content/Retro.min.css" id="CssTheme" />
     <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+    <div>
+        <div> 
+            @RenderBody()
+        </div>
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <p>
+                          <a href="https://github.com/clydedz/TheChameleon">
+                              <i class="mdi mdi-github"></i>
+                          </a>
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>The Chameleon &copy; @DateTime.Now.Year - Clyde D'Souza</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

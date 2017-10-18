@@ -4,6 +4,7 @@
 /* COMPONENTS */
 @import "../Components/buttons";
 @import "../Components/_containers";
+@import "../Components/_slider";
 
 .pal-one{
     color: $neon_void;
@@ -52,4 +53,24 @@
     &.variant_4 {
         @include colour-variant( $neon_void );
     }
+}
+
+footer{
+    @include footer-appearance( $neon_void, $neon_stark);
+}
+
+.slide {
+    &:before, &:after{
+        @include quotations ( $neon_jewel );    
+    }
+}
+
+#slider-nav {    
+    a {
+	    @include slider-nav-a ( $neon_jewel, $neon_fuschia );
+        
+        &.current {
+            @include slider-nav-a-current ( $neon_fuschia, $neon_jewel );
+        }
+    }  
 }

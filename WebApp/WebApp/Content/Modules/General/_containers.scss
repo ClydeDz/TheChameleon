@@ -12,3 +12,12 @@
 .colour-scheme{
     @include colour-scheme;
 }
+
+.ctn-main{
+    padding: 9px 18px;
+}
+
+.ctn-secondary{
+    background: url('https://i.ytimg.com/vi/yZ5mMJROjdg/hqdefault.jpg') no-repeat center;
+    background-size: cover;
+}

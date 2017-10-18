@@ -7,10 +7,11 @@
 @import "_containers";
 @import "_theme-picker";
 @import "_header";
+@import "_slider";
+@import "_text";
+@import "_footer";
 
 body {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .body-content {
@@ -24,4 +25,13 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.theme-picker {
+    display: inline-block;
+    background-color: transparent;
+}
+
+.theme-picker:hover {
+    background-color: gray;
 }

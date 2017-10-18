@@ -1,0 +1,19 @@
+﻿$large-breakpoint: 1024px;
+$medium-breakpoint: 968px;
+$small-breakpoint: 520px;
+
+@mixin slider-nav-a ( $bg-color, $fg-color ) {
+      color: $fg-color;
+      border: 1px solid $bg-color;
+      background-color: $bg-color;
+}
+
+@mixin slider-nav-a-current ( $bg-color, $fg-color ) {
+     border-color: $bg-color;
+     background-color: $bg-color;
+}
+
+
+@mixin quotations ( $fg-color ) {
+    color: $fg-color;
+}

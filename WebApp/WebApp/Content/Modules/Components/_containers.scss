@@ -3,18 +3,37 @@
     width: 100%;
     padding-left:0;
     padding-right:0;
-    margin-left:0;
-    margin-right:0;
+    margin: 18px 0;
+       
+    @media(max-width: 768px){
+           display: inline-block;
+    }
+    @media(min-width: 769px){
+        display: inline-flex;
+    }
+    
 }
 
 @mixin half-col {
-    width: 49%;
-    margin: 0;
-    display: inline-block;
+    @media(max-width: 768px){
+          width: 100%;
+          display: block;
+    }
+    @media(min-width: 769px){
+          width: 50%;
+          display: inline-block;
+    }
+  
+    margin: 0;    
+    min-height: 250px;
 }
 
 @mixin ctn-main ( $bg-color ) {
     background-color: $bg-color;
+
+    h2, h3, p {
+        color: white;
+    }
 }
 
 @mixin colour-scheme {
@@ -36,11 +55,22 @@
         content: "" + $bg-color;
         background-color: rgba(0, 0, 0, 0.2);
         width: 100%;
-        padding: 9px 111px;
+        padding: 9px 116px;
         margin: 0;
         position: relative;
         left: -15px;
         display: inline-block;
         bottom: -29px;
+        text-transform: uppercase;
     }
+}
+
+@mixin footer{
+    padding: 18px 0;
+    margin-top: 9px;
+}
+
+@mixin footer-appearance ( $bg-color, $fg-color ) {
+    background-color: $bg-color;
+    color: $fg-color;
 }

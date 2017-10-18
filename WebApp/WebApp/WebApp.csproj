@@ -188,6 +188,12 @@
     <Content Include="Content\Modules\General\_containers.scss" />
     <Content Include="Content\Modules\General\_buttons.scss" />
     <Content Include="Content\Modules\General\_header.scss" />
+    <Content Include="Content\Modules\General\_slider.scss" />
+    <Content Include="Content\Modules\General\_footer.scss" />
+    <Content Include="Content\Modules\Components\_slider.scss" />
+    <Content Include="Content\Modules\General\_text.scss" />
+    <Content Include="Content\Modules\Components\_text.scss" />
+    <Content Include="Content\Modules\Components\_footer.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

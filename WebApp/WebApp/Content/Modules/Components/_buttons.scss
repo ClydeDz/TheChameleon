@@ -16,3 +16,22 @@
     background-color: $bg-color;
     border: 1px solid $fg-color;
 }
+
+
+@mixin link-generic {
+    margin: 9px 9px 9px 0;
+    padding: 9px 18px;
+    text-decoration: none !important;
+}
+
+@mixin link-generic-hover {
+    text-decoration: none !important;
+}
+
+@mixin link ( $fg-color ) {
+    color: $fg-color;
+}
+
+@mixin link-hover ( $fg-color ) {
+    color: $fg-color;
+}

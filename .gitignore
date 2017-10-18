@@ -2,4 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/WebApp/packages/Antlr.3.4.1.9004/Antlr.3.4.1.9004.nupkg
+/WebApp/packages/

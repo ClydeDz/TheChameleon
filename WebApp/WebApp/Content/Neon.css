@@ -30,6 +30,8 @@
 
 .ctn-main {
   background-color: #4717F6; }
+  .ctn-main h2, .ctn-main h3, .ctn-main p {
+    color: white; }
 
 .colour-scheme.variant_1 {
   background-color: #A239CA;
@@ -41,12 +43,13 @@
     content: "#A239CA";
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding: 9px 111px;
+    padding: 9px 116px;
     margin: 0;
     position: relative;
     left: -15px;
     display: inline-block;
-    bottom: -29px; }
+    bottom: -29px;
+    text-transform: uppercase; }
 
 .colour-scheme.variant_2 {
   background-color: #4717F6;
@@ -58,12 +61,13 @@
     content: "#4717F6";
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding: 9px 111px;
+    padding: 9px 116px;
     margin: 0;
     position: relative;
     left: -15px;
     display: inline-block;
-    bottom: -29px; }
+    bottom: -29px;
+    text-transform: uppercase; }
 
 .colour-scheme.variant_3 {
   background-color: #E7DFDD;
@@ -75,12 +79,13 @@
     content: "#E7DFDD";
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding: 9px 111px;
+    padding: 9px 116px;
     margin: 0;
     position: relative;
     left: -15px;
     display: inline-block;
-    bottom: -29px; }
+    bottom: -29px;
+    text-transform: uppercase; }
 
 .colour-scheme.variant_4 {
   background-color: #0E0B16;
@@ -92,10 +97,26 @@
     content: "#0E0B16";
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding: 9px 111px;
+    padding: 9px 116px;
     margin: 0;
     position: relative;
     left: -15px;
     display: inline-block;
-    bottom: -29px; }
+    bottom: -29px;
+    text-transform: uppercase; }
+
+footer {
+  background-color: #0E0B16;
+  color: #E7DFDD; }
+
+.slide:before, .slide:after {
+  color: #4717F6; }
+
+#slider-nav a {
+  color: #A239CA;
+  border: 1px solid #4717F6;
+  background-color: #4717F6; }
+  #slider-nav a.current {
+    border-color: #A239CA;
+    background-color: #A239CA; }
 
