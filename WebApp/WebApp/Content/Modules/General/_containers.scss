@@ -17,6 +17,10 @@
     padding: 9px 18px;
 }
 
+.attn-links {
+    @include attn-links;
+}
+
 .ctn-secondary{
     background: url('https://i.ytimg.com/vi/yZ5mMJROjdg/hqdefault.jpg') no-repeat center;
     background-size: cover;

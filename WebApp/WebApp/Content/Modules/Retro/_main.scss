@@ -6,20 +6,7 @@
 @import "../Components/_containers";
 @import "../Components/_slider";
 
-.pal-one{
-    color: $retro_azure;
-}
-.pal-two{
-    color: $retro_azure;
-}
-.pal-three{
-    color: $retro_azure;
-}
-.pal-four{
-    color: $retro_azure;
-}
-
-
+/* WEBSITE HEADER */
 .website-header {
     h1 {
         color: $retro_azure;
@@ -29,6 +16,7 @@
     }
 }
 
+/* BUTTONS AND LINKS */
 .btn-main{
     @include btn-main($retro_butter, $retro_peach);
 }
@@ -37,10 +25,21 @@
     @include btn-inverse($retro_peach, $retro_butter);
 }
 
+a.website-links {
+    @include link ( $retro_azure );
+}
+
+/* CONTAINERS */
 .ctn-main{
     @include ctn-main($retro_peach);
 }
 
+.ctn-general {
+    @include ctn-generic ( $retro_peach );
+}
+
+
+/* THEME PICKER */
 .colour-scheme {
     &.variant_1 {
         @include colour-variant( $retro_azure );
@@ -56,6 +55,7 @@
     }
 }
 
+/* FOOTER */
 footer{
     @include footer-appearance( $retro_black, $retro_peach);
 }

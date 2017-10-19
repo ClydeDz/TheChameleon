@@ -4,11 +4,13 @@
 }
 
 h2, h3{
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 body {
     font-size: 16px;
 }
 
-
+@mixin header ( $fg-color ) {
+    color: $fg-color;
+}

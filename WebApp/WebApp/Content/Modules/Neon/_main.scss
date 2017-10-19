@@ -6,19 +6,7 @@
 @import "../Components/_containers";
 @import "../Components/_slider";
 
-.pal-one{
-    color: $neon_void;
-}
-.pal-two{
-    color: $neon_fuschia;
-}
-.pal-three{
-    color: $neon_jewel;
-}
-.pal-four{
-    color: $neon_stark;
-}
-
+/* WEBSITE HEADER */
 .website-header {
     h1 {
         color: $neon_void;
@@ -28,6 +16,7 @@
     }
 }
 
+/* BUTTONS AND LINKS */
 .btn-main{
     @include btn-main($neon_stark, $neon_jewel);
 }
@@ -36,10 +25,20 @@
     @include btn-inverse($neon_jewel, $neon_stark);
 }
 
+a.website-links {
+    @include link ( $neon_jewel );
+}
+
+/* CONTAINERS */
 .ctn-main{
     @include ctn-main($neon_jewel);
 }
 
+.ctn-general {
+    @include ctn-generic ( $neon_stark );
+}
+
+/* THEME PICKER */
 .colour-scheme {
     &.variant_1 {
         @include colour-variant( $neon_fuschia );
@@ -55,6 +54,7 @@
     }
 }
 
+/* FOOTER */
 footer{
     @include footer-appearance( $neon_void, $neon_stark);
 }

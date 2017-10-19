@@ -8,3 +8,7 @@
 .btn-inverse{
     @include btn-generic;
 }
+
+a.website-links {
+    @include link-generic;
+}

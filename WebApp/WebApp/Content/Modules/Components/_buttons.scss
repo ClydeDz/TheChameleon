@@ -3,35 +3,57 @@
     margin: 9px 9px 9px 0;
     padding: 9px 18px;
     text-decoration: none !important;
+
+    &:hover, &:focus {
+        text-decoration: none !important;
+    }
 }
 
 @mixin btn-main ( $fg-color, $bg-color ) {
     color: $fg-color;
     background-color: $bg-color;
     border: 1px solid $bg-color;
+
+    &:hover, &:focus {
+        color: $fg-color;
+        background-color: darken( $bg-color, 5% );
+    }
 }
 
 @mixin btn-inverse ( $fg-color, $bg-color ) {
     color: $fg-color;
     background-color: $bg-color;
     border: 1px solid $fg-color;
+    
+    &:hover, &:focus {
+        color: $fg-color;
+        background-color: darken( $bg-color, 5% );
+    }
 }
 
 
 @mixin link-generic {
-    margin: 9px 9px 9px 0;
+    margin: 9px 18px 9px 0;
     padding: 9px 18px;
     text-decoration: none !important;
-}
 
-@mixin link-generic-hover {
-    text-decoration: none !important;
+    &:hover, &:focus {
+        text-decoration: none !important;
+        border-bottom: 1px dashed;
+    }
+
+    i.mdi {
+        margin-right: 4px;
+        font-size: large;
+    }
 }
 
 @mixin link ( $fg-color ) {
     color: $fg-color;
+
+    &:hover, &:focus {
+        color: darken( $fg-color, 5% );
+        border-bottom-color: $fg-color;
+    }
 }
 
-@mixin link-hover ( $fg-color ) {
-    color: $fg-color;
-}

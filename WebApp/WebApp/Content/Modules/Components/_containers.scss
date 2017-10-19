@@ -3,7 +3,7 @@
     width: 100%;
     padding-left:0;
     padding-right:0;
-    margin: 18px 0;
+    margin: 24px 0;
        
     @media(max-width: 768px){
            display: inline-block;
@@ -25,7 +25,7 @@
     }
   
     margin: 0;    
-    min-height: 250px;
+    min-height: 300px;
 }
 
 @mixin ctn-main ( $bg-color ) {
@@ -36,9 +36,19 @@
     }
 }
 
+@mixin ctn-generic ( $fg-color ) {
+    h1, h2, h3 {
+        color: $fg-color;
+    }
+}
+
 @mixin colour-scheme {
     display: inline-block;
     min-height:200px;
+}
+
+@mixin attn-links{
+    padding: 18px 9px;
 }
 
 @mixin colour-variant ( $bg-color ) {
