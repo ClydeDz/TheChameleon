@@ -2,31 +2,24 @@
 @import '../Colours/_neon.scss';
 
 /* COMPONENTS */
-@import "../Components/buttons";
-@import "../Components/_containers";
-@import "../Components/_slider";
+@import "../Components/_loadComponents";
 
 /* WEBSITE HEADER */
 .website-header {
-    h1 {
-        color: $neon_void;
-    }
-    p {
-        color: $neon_fuschia;
-    }
+    @include website-header( $neon_void, $neon_fuschia );
 }
 
 /* BUTTONS AND LINKS */
 .btn-main{
-    @include btn-main($neon_stark, $neon_jewel);
+    @include btn-main( $neon_stark, $neon_jewel );
 }
 
 .btn-inverse{
-    @include btn-inverse($neon_jewel, $neon_stark);
+    @include btn-inverse( $neon_jewel, $neon_stark );
 }
 
 a.website-links {
-    @include link ( $neon_jewel );
+    @include link( $neon_jewel );
 }
 
 /* CONTAINERS */
@@ -38,27 +31,7 @@ a.website-links {
     @include ctn-generic ( $neon_stark );
 }
 
-/* THEME PICKER */
-.colour-scheme {
-    &.variant_1 {
-        @include colour-variant( $neon_fuschia );
-    }
-    &.variant_2 {
-        @include colour-variant( $neon_jewel );
-    }
-    &.variant_3 {
-        @include colour-variant( $neon_stark );
-    }
-    &.variant_4 {
-        @include colour-variant( $neon_void );
-    }
-}
-
-/* FOOTER */
-footer{
-    @include footer-appearance( $neon_void, $neon_stark);
-}
-
+/* SLIDER */
 .slide {
     &:before, &:after{
         @include quotations ( $neon_jewel );    
@@ -73,4 +46,18 @@ footer{
             @include slider-nav-a-current ( $neon_fuschia, $neon_jewel );
         }
     }  
+}
+
+/* COLOUR SCHEME */
+.colour-scheme {
+    @include colour-variant-parts( $neon_fuschia, $neon_jewel, $neon_stark, $neon_void);
+}
+
+/* FOOTER */
+footer {
+    @include footer-appearance( $neon_void, $neon_stark);
+
+    a {
+        @include link ( $neon_stark );
+    }
 }

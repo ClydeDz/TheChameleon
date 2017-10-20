@@ -2,59 +2,84 @@
 @import '../Colours/_retro.scss';
 @import '../Colours/_neon.scss';
 
-.circle {
-    border-radius: 50%;
-    background: gray;
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 9px;
+$themepicker-color: red;
 
-    &:last-child{
-        margin-right:0;
-    }
-    
-    > .part {
-        float: left;
-        width: 25%;
-        height: 100%;
+/* PARTS IN THE THEME PICKER CIRCLE */
+@mixin theme-picker-parts ( $part-1, $part-2, $part-3, $part-4 ) {
+    > .part_1 {
+        background: $part-1;
     }
 
-    &.neon {
-        > .part_1 {
-            background: $neon_void;
-        }
-
-        > .part_2 {
-            background: $neon_fuschia;
-        }
-
-        > .part_3 {
-            background: $neon_jewel;
-        }
-
-        > .part_4 {
-            background: $neon_stark;
-        }
+    > .part_2 {
+        background: $part-2;
     }
 
-    &.retro {
-        > .part_1 {
-            background: $retro_butter;
+    > .part_3 {
+        background: $part-3;
+    }
+
+    > .part_4 {
+        background: $part-4;
+    }
+}
+
+
+.ctn-theme-picker {
+    .theme-picker {
+
+        /* APPEARANCE OF THE PICKER */
+        display: inline-block;
+        background-color: transparent;
+        padding: 9px 7px;
+        border-top: 3px solid transparent;
+
+        &.active {
+            border-top: 3px solid $themepicker-color;
         }
 
-        > .part_2 {
-            background: $retro_black;
+        span {
+            font-size: small;
+            display: block;
+            position: relative;
+            bottom: 4px;
         }
 
-        > .part_3 {
-            background: $retro_azure;
+        &:hover, &:focus {
+            background-color: lighten( $themepicker-color, 47% );
         }
 
-        > .part_4 {
-            background: $retro_peach;
+        &:first-child:hover {
+            background-color: transparent;
+        }
+
+        /* THEMES */
+        .circle {
+            border-radius: 50%;
+            background: gray;
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 9px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            > .part {
+                float: left;
+                width: 25%;
+                height: 100%;
+            }
+
+            &.neon {
+                 @include theme-picker-parts ($neon_void, $neon_fuschia, $neon_jewel, $neon_stark);
+            }
+
+            &.retro {
+                @include theme-picker-parts ($retro_butter, $retro_black, $retro_azure, $retro_peach);
+            }
         }
     }
 }

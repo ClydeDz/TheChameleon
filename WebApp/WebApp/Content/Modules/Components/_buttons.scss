@@ -1,44 +1,40 @@
-﻿@mixin btn-generic{
-    border-radius: 30px;
+﻿@mixin btn-link-generic {
     margin: 9px 9px 9px 0;
     padding: 9px 18px;
     text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+@mixin btn-generic {
+    @include btn-link-generic;
+    border-radius: 30px;
+}
+
+@mixin btn-main-inverse ( $fg-color, $bg-color ) {
+    color: $fg-color;
+    background-color: $bg-color;
+    border-color: $bg-color;
 
     &:hover, &:focus {
-        text-decoration: none !important;
+        color: $fg-color;
+        background-color: darken( $bg-color, 5% );
     }
 }
 
 @mixin btn-main ( $fg-color, $bg-color ) {
-    color: $fg-color;
-    background-color: $bg-color;
-    border: 1px solid $bg-color;
-
-    &:hover, &:focus {
-        color: $fg-color;
-        background-color: darken( $bg-color, 5% );
-    }
+    @include btn-main-inverse( $fg-color, $bg-color );
 }
 
 @mixin btn-inverse ( $fg-color, $bg-color ) {
-    color: $fg-color;
-    background-color: $bg-color;
-    border: 1px solid $fg-color;
-    
-    &:hover, &:focus {
-        color: $fg-color;
-        background-color: darken( $bg-color, 5% );
-    }
+    @include btn-main-inverse( $fg-color, $bg-color );
 }
 
-
 @mixin link-generic {
-    margin: 9px 18px 9px 0;
-    padding: 9px 18px;
-    text-decoration: none !important;
+    @include btn-link-generic;
 
     &:hover, &:focus {
-        text-decoration: none !important;
         border-bottom: 1px dashed;
     }
 
@@ -56,4 +52,3 @@
         border-bottom-color: $fg-color;
     }
 }
-

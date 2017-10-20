@@ -1,14 +1,17 @@
-﻿h1, h2, h3 {
-    font-weight: 700;
-    font-family: sans-serif;
-}
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Numans');
 
-h2, h3{
-    font-size: 6vh;
-}
+$heading-font: 'Raleway', sans-serif;
+$body-font: 'Numans', sans-serif;
 
-body {
-    font-size: 16px;
+@mixin website-header ( $header-color, $body-color ) {
+    h1 {
+        color: $header-color;
+    }
+
+    p {
+        color: $body-color;
+    }
 }
 
 @mixin header ( $fg-color ) {

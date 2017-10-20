@@ -2,20 +2,22 @@
     ViewBag.Title = "You choose the theme for this website";
 }
 
-<div class="container">
+<div class="container ctn-theme-picker">
     <div class="row">
         <div class="col-xs-12 text-right">
-            <span>Pick a theme:&nbsp;</span>
             <div class="theme-picker">
-                <div class="circle neon" title="Neon" onclick="updateSiteTheme('neon');">
+                <span>Pick a theme:&nbsp;</span>
+            </div>
+            <div class="theme-picker">
+                <div class="circle neon" title="Neon" onclick="updateSiteTheme('neon', this);">
                     <div class="part part_1"></div>
                     <div class="part part_2"></div>
                     <div class="part part_3"></div>
                     <div class="part part_4"></div>
                 </div>
             </div>
-            <div class="theme-picker">
-                <div class="circle retro" title="Retro" onclick="updateSiteTheme('retro');">
+            <div class="theme-picker active">
+                <div class="circle retro" title="Retro" onclick="updateSiteTheme('retro', this);">
                     <div class="part part_1"></div>
                     <div class="part part_2"></div>
                     <div class="part part_3"></div>
@@ -25,10 +27,11 @@
         </div>
     </div>
 </div>
+
 <div class="container website-header">
     <div class="row">
         <div class="col-xs-12">
-            <img src="~/Images/Icons/cham-retro-sq.jpg" alt="The Chameleon's icon" class="website-icon"/>
+            <img src="~/Images/Icons/cham-retro-circle.png" alt="The Chameleon's icon" />
         </div>
     </div>
     <div class="row">
@@ -48,6 +51,7 @@
         </div>
     </div>
 </div>
+
 <div class="wide-container">
     <div class="half-col ctn-secondary">
         &nbsp;
@@ -112,22 +116,18 @@
 </div>
 
 <div class="wide-container">
-    @*<div>
-        <div class="row">*@
-            <div class="col-xs-6 col-sm-3 colour-scheme variant_1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-xs-6 col-sm-3 colour-scheme variant_2">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-xs-6 col-sm-3 colour-scheme variant_3">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-xs-6 col-sm-3 colour-scheme variant_4">
-                <p>&nbsp;</p>
-            </div>
-        @*</div>
-    </div>*@
+    <div class="col-xs-6 col-sm-3 colour-scheme variant_1">
+        <p>&nbsp;</p>
+    </div>
+    <div class="col-xs-6 col-sm-3 colour-scheme variant_2">
+        <p>&nbsp;</p>
+    </div>
+    <div class="col-xs-6 col-sm-3 colour-scheme variant_3">
+        <p>&nbsp;</p>
+    </div>
+    <div class="col-xs-6 col-sm-3 colour-scheme variant_4">
+        <p>&nbsp;</p>
+    </div>
 </div>
 
 <div class="container ctn-general">
@@ -149,85 +149,5 @@
         </div>
     </div>
 </div>
-<script>
-    function updateSiteTheme(theme){
-        switch (theme) {
-            case 'neon':
-                document.getElementById('CssTheme').href = '../Content/Neon.min.css';
-                break;
-            case 'retro':
-                document.getElementById('CssTheme').href = '../Content/Retro.min.css';
-                break;
-            default:
-                document.getElementById('CssTheme').href = '../Content/Neon.min.css';
-                break;
-        }
-    }
 
-    function Slider(element) {
-        this.el = document.querySelector(element);
-        this.init();
-    }
-
-    Slider.prototype = {
-        init: function () {
-            this.links = this.el.querySelectorAll("#slider-nav a");
-            this.wrapper = this.el.querySelector("#slider-wrapper");
-            this.navigate();
-        },
-        navigate: function () {
-
-            for (var i = 0; i < this.links.length; ++i) {
-                var link = this.links[i];
-                this.slide(link);
-            }
-        },
-
-        animate: function (slide) {
-            var parent = slide.parentNode;
-            //var caption = slide.querySelector(".caption");
-            //var captions = parent.querySelectorAll(".caption");
-            //for (var k = 0; k < captions.length; ++k) {
-            //    var cap = captions[k];
-            //    if (cap !== caption) {
-            //        cap.classList.remove("visible");
-            //    }
-            //}
-            //caption.classList.add("visible");
-        },
-
-        slide: function (element) {
-            var self = this;
-            element.addEventListener("click", function (e) {
-                e.preventDefault();
-                var a = this;
-                self.setCurrentLink(a);
-                var index = parseInt(a.getAttribute("data-slide"), 10) + 1;
-                var currentSlide = self.el.querySelector(".slide:nth-child(" + index + ")");
-
-                self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
-                self.animate(currentSlide);
-
-            }, false);
-        },
-        setCurrentLink: function (link) {
-            var parent = link.parentNode;
-            var a = parent.querySelectorAll("a");
-
-            link.className = "current";
-
-            for (var j = 0; j < a.length; ++j) {
-                var cur = a[j];
-                if (cur !== link) {
-                    cur.className = "";
-                }
-            }
-        }
-    };
-
-    document.addEventListener("DOMContentLoaded", function () {
-        var aSlider = new Slider("#slider");
-
-    });
-
-</script>
+<script src="~/Scripts/app.min.js" type="text/javascript"></script>

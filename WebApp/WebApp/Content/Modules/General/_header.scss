@@ -1,8 +1,10 @@
-﻿.website-icon{
-    border-radius: 60px;
-    width: 70px;
-}
+﻿.website-header {
+    h1 {
+        font-size: 7vh; 
+    }
 
-.website-header h1 {
-    font-size: 7vh; 
+    img {
+        border-radius: 60px;
+        width: 70px;
+    } 
 }

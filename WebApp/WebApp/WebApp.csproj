@@ -164,6 +164,12 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Icons\cham-retro-sq.jpg" />
     <Content Include="Images\Icons\cham-retro.jpg" />
+    <Content Include="Images\Icons\cham-retro-circle.png" />
+    <Content Include="Images\Banners\site-teaser.png" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Modules\Light\_main.scss" />
@@ -171,6 +177,7 @@
     <Content Include="Content\Modules\General\_main.scss" />
     <Content Include="Content\Modules\Dark\_main.scss" />
     <Content Include="Content\Dark.scss" />
+    <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -194,6 +201,7 @@
     <Content Include="Content\Modules\General\_text.scss" />
     <Content Include="Content\Modules\Components\_text.scss" />
     <Content Include="Content\Modules\Components\_footer.scss" />
+    <Content Include="Content\Modules\Components\_loadComponents.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
