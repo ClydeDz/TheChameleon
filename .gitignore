@@ -4,3 +4,5 @@
 
 /WebApp/packages/
 /WebApp/WebApp/obj/
+/WebApp/WebApp/Properties/PublishProfiles/thechameleon-web - Web Deploy.pubxml
+/WebApp/WebApp/Properties/PublishProfiles/thechameleon-web - FTP.pubxml

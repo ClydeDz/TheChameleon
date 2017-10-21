@@ -38,13 +38,11 @@
         }
     }
 
-    #slider-nav {
-        a {
-            @include slider-nav-a( $xtra-bright, $light );
+    .dot {
+        @include slider-nav-a( $xtra-bright, $light );
 
-            &.current {
-                @include slider-nav-a-current( $light, $xtra-bright );
-            }
+        &.active {
+            @include slider-nav-a-current( $light, $xtra-bright );
         }
     }
     /* COLOUR SCHEME */

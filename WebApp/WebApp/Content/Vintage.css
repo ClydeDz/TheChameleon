@@ -43,11 +43,11 @@ html {
     color: #636b46; }
   html .slide:before, html .slide:after {
     color: #cd434f; }
-  html #slider-nav a {
+  html .dot {
     color: #cd434f;
     border: 1px solid #e9e7da;
     background-color: #e9e7da; }
-    html #slider-nav a.current {
+    html .dot.active {
       border-color: #cd434f;
       background-color: #cd434f; }
   html .colour-scheme.variant_1 {

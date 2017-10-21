@@ -41,11 +41,46 @@
 
 <div class="container ctn-general">
     <div class="row">
-        <div class="col-xs-12 text-center">
+        <div class="col-xs-12 col-sm-12 text-center">
             <h2>Did You Know?</h2>
+            <div id="slider">
+                <div id="slider-wrapper">
+                    <div class="slide">
+                        <p>
+                            Chameleons catch their prey by ballistically shooting their long tongue from a distance.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p>
+                            Chameleons are not deaf: they can detect sound frequencies in the range of 200-600 Hz.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p>
+                            Declining chameleon numbers are due to pollution and deforestation.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p>
+                            Each eye of the chameleon can move independently and hence view objects separately.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p>
+                            Chameleons are blessed with vision in both the visible spectrum (as humans do) and also in ultraviolet light.
+                        </p>
+                    </div>
+                </div>
+                <div id="slider-nav">
+                    <a href="#" data-slide="0" class="current"></a>
+                    <a href="#" data-slide="1"></a>
+                    <a href="#" data-slide="2"></a>
+                    <a href="#" data-slide="3"></a>
+                    <a href="#" data-slide="4"></a>
+                </div>
+            </div>	
         </div>
     </div>
-    @{ Html.RenderPartial("~/Views/Shared/_FactsSliderPartial.cshtml");  }
 </div>
 
 <div class="container ctn-general">

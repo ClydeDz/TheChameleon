@@ -1,93 +1,21 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - The Chameleon</title>
-    
-    <link type="text/css" rel="stylesheet" media="all" href="~/Content/Main.min.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="~/Content/Retro.min.css" id="CssTheme" />
-    <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+    @{ Html.RenderPartial("~/Views/Shared/_HeaderPartial.cshtml");  } 
 </head>
 <body>
-
     <div>
         <header>
-
-            <div class="container ctn-theme-picker">
-                <div class="row">
-                    <div class="col-xs-12 text-right">
-                        <div class="theme-picker">
-                            <span>Pick a theme:&nbsp;</span>
-                        </div>
-                        <div class="theme-picker">
-                            <div class="circle pop" title="Pop" onclick="updateSiteTheme('pop', this);">
-                                <div class="part part_1"></div>
-                                <div class="part part_2"></div>
-                                <div class="part part_3"></div>
-                                <div class="part part_4"></div>
-                            </div>
-                        </div>
-                        <div class="theme-picker">
-                            <div class="circle fun" title="Fun" onclick="updateSiteTheme('fun', this);">
-                                <div class="part part_1"></div>
-                                <div class="part part_2"></div>
-                                <div class="part part_3"></div>
-                                <div class="part part_4"></div>
-                            </div>
-                        </div>
-                        <div class="theme-picker">
-                            <div class="circle vintage" title="Vintage" onclick="updateSiteTheme('vintage', this);">
-                                <div class="part part_1"></div>
-                                <div class="part part_2"></div>
-                                <div class="part part_3"></div>
-                                <div class="part part_4"></div>
-                            </div>
-                        </div>
-                        <div class="theme-picker">
-                            <div class="circle neon" title="Neon" onclick="updateSiteTheme('neon', this);">
-                                <div class="part part_1"></div>
-                                <div class="part part_2"></div>
-                                <div class="part part_3"></div>
-                                <div class="part part_4"></div>
-                            </div>
-                        </div>
-                        <div class="theme-picker active">
-                            <div class="circle retro" title="Retro" onclick="updateSiteTheme('retro', this);">
-                                <div class="part part_1"></div>
-                                <div class="part part_2"></div>
-                                <div class="part part_3"></div>
-                                <div class="part part_4"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @{ Html.RenderPartial("~/Views/Shared/_ThemePickerPartial.cshtml");  }
         </header>
         <div> 
             @RenderBody()
         </div>
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                      <p>
-                          <a href="https://github.com/clydedz/TheChameleon">
-                              <i class="mdi mdi-github-circle mdi-36px"></i>
-                          </a>
-                      </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p>The Chameleon &copy; @DateTime.Now.Year - <a href="https://clydedsouza.net">Clyde D'Souza</a></p>
-                    </div>
-                </div>
-            </div>
+            @{ Html.RenderPartial("~/Views/Shared/_FooterPartial.cshtml");  }
         </footer>
     </div>
 
-    @*@Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
 </body>
 </html>

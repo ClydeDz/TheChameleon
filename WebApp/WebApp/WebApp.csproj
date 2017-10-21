@@ -168,10 +168,27 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Icons\android-chrome-192x192.png" />
+    <Content Include="Images\Icons\apple-touch-icon-114x114.png" />
+    <Content Include="Images\Icons\apple-touch-icon-120x120.png" />
+    <Content Include="Images\Icons\apple-touch-icon-144x144.png" />
+    <Content Include="Images\Icons\apple-touch-icon-152x152.png" />
+    <Content Include="Images\Icons\apple-touch-icon-180x180.png" />
+    <Content Include="Images\Icons\apple-touch-icon-57x57.png" />
+    <Content Include="Images\Icons\apple-touch-icon-60x60.png" />
+    <Content Include="Images\Icons\apple-touch-icon-72x72.png" />
+    <Content Include="Images\Icons\apple-touch-icon-76x76.png" />
     <Content Include="Images\Icons\cham-retro-sq.jpg" />
     <Content Include="Images\Icons\cham-retro.jpg" />
     <Content Include="Images\Icons\cham-retro-circle.png" />
     <Content Include="Images\Banners\site-teaser.png" />
+    <Content Include="Images\Icons\favicon-16x16.png" />
+    <Content Include="Images\Icons\favicon-32x32.png" />
+    <Content Include="Images\Icons\favicon-96x96.png" />
+    <Content Include="Images\Icons\favicon.ico" />
+    <Content Include="Images\Icons\largetile.png" />
+    <Content Include="Images\Icons\mediumtile.png" />
+    <Content Include="Images\Icons\smalltile.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
@@ -218,6 +235,8 @@
     <Content Include="Content\Pop.scss" />
     <Content Include="Content\Modules\Components\_breakpoints.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
+    <None Include="Properties\PublishProfiles\thechameleon-web - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\thechameleon-web - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -244,6 +263,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index - Copy.cshtml" />
+    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_ThemePickerPartial.cshtml" />
+    <Content Include="Views\Shared\_FactsSliderPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
