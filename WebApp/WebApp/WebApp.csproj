@@ -127,17 +127,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Dark.css">
-      <DependentUpon>Dark.scss</DependentUpon>
+    <Content Include="Content\Fun.css">
+      <DependentUpon>Fun.scss</DependentUpon>
     </Content>
-    <Content Include="Content\Dark.min.css">
-      <DependentUpon>Dark.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Light.css">
-      <DependentUpon>Light.scss</DependentUpon>
-    </Content>
-    <Content Include="Content\Light.min.css">
-      <DependentUpon>Light.css</DependentUpon>
+    <Content Include="Content\Fun.min.css">
+      <DependentUpon>Fun.css</DependentUpon>
     </Content>
     <Content Include="Content\Main.css">
       <DependentUpon>Main.scss</DependentUpon>
@@ -145,17 +139,17 @@
     <Content Include="Content\Main.min.css">
       <DependentUpon>Main.css</DependentUpon>
     </Content>
-    <Content Include="Content\Neon - Copy.css">
-      <DependentUpon>Vintage.scss</DependentUpon>
-    </Content>
-    <Content Include="Content\Neon - Copy.min.css">
-      <DependentUpon>Neon - Copy.css</DependentUpon>
-    </Content>
     <Content Include="Content\Neon.css">
       <DependentUpon>Neon.scss</DependentUpon>
     </Content>
     <Content Include="Content\Neon.min.css">
       <DependentUpon>Neon.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Pop.css">
+      <DependentUpon>Pop.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Pop.min.css">
+      <DependentUpon>Pop.css</DependentUpon>
     </Content>
     <Content Include="Content\Retro.css">
       <DependentUpon>Retro.scss</DependentUpon>
@@ -184,11 +178,7 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\Modules\Themes\Light\_main.scss" />
-    <Content Include="Content\Light.scss" />
     <Content Include="Content\Modules\General\_main.scss" />
-    <Content Include="Content\Modules\Themes\Dark\_main.scss" />
-    <Content Include="Content\Dark.scss" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -213,12 +203,20 @@
     <Content Include="Content\Modules\General\_text.scss" />
     <Content Include="Content\Modules\Components\_text.scss" />
     <Content Include="Content\Modules\Components\_footer.scss" />
-    <Content Include="Content\Modules\Components\_loadComponents.scss" />
+    <Content Include="Content\Modules\Components\_load-components.scss" />
     <Content Include="Content\Modules\Themes\_master.scss" />
     <Content Include="Content\Modules\Components\_theme-picker.scss" />
     <Content Include="Content\Modules\Colours\_vintage.scss" />
     <Content Include="Content\Modules\Themes\Vintage\_main.scss" />
     <Content Include="Content\Vintage.scss" />
+    <Content Include="Content\Modules\Components\_header.scss" />
+    <Content Include="Content\Modules\Colours\_fun.scss" />
+    <Content Include="Content\Modules\Themes\Fun\_main.scss" />
+    <Content Include="Content\Fun.scss" />
+    <Content Include="Content\Modules\Colours\_pop.scss" />
+    <Content Include="Content\Modules\Themes\Pop\_main.scss" />
+    <Content Include="Content\Pop.scss" />
+    <Content Include="Content\Modules\Components\_breakpoints.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

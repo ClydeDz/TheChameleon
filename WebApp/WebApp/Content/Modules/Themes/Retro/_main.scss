@@ -2,9 +2,9 @@
 @import '../../Colours/_retro';
 
 /* COMPONENTS */
-@import "../master";
+@import "../_master";
 
-body {
-    @include apply-theme( nth($theme_colours, 1), nth($theme_colours, 2), nth($theme_colours, 3), nth($theme_colours, 4) );
+html {
+    @include apply-theme( nth($retro_colours, 1), nth($retro_colours, 2), nth($retro_colours, 3), nth($retro_colours, 4) );
 }
 

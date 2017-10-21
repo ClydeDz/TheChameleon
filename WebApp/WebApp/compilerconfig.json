@@ -4,6 +4,14 @@
     "inputFile": "Content/Main.scss"
   },
   {
+    "outputFile": "Content/Pop.css",
+    "inputFile": "Content/Pop.scss"
+  },
+  {
+    "outputFile": "Content/Fun.css",
+    "inputFile": "Content/Fun.scss"
+  },
+  {
     "outputFile": "Content/Vintage.css",
     "inputFile": "Content/Vintage.scss"
   },
@@ -14,13 +22,5 @@
   {
     "outputFile": "Content/Retro.css",
     "inputFile": "Content/Retro.scss"
-  },
-  {
-    "outputFile": "Content/Light.css",
-    "inputFile": "Content/Light.scss"
-  },
-  {
-    "outputFile": "Content/Dark.css",
-    "inputFile": "Content/Dark.scss"
   }
 ]

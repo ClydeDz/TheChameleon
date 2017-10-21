@@ -2,9 +2,8 @@
 @import '../../Colours/_vintage';
 
 /* COMPONENTS */
-@import "../master";
+@import "../_master";
 
-
-body {
-    @include apply-theme( nth($theme_colours, 1), nth($theme_colours, 2), nth($theme_colours, 3), nth($theme_colours, 4) );
+html {
+    @include apply-theme( nth($vintage_colours, 1), nth($vintage_colours, 2), nth($vintage_colours, 3), nth($vintage_colours, 4) );
 }

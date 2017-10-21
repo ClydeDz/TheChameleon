@@ -1,5 +1,5 @@
 ﻿/* COMPONENTS */
-@import "../Components/_loadComponents";
+@import "../Components/_load-components";
 
 /* COLOURS */
 @mixin apply-theme ($normal, $xtra-dark, $xtra-bright, $light) {
@@ -9,7 +9,7 @@
     }
     /* WEBSITE HEADER */
     .website-header {
-        @include website-header( $normal, $xtra-dark );
+        @include website-header( $normal );
     }
     /* BUTTONS AND LINKS */
     .btn-main {

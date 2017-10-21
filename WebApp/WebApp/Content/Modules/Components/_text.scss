@@ -3,17 +3,3 @@
 
 $heading-font: 'Raleway', sans-serif;
 $body-font: 'Numans', sans-serif;
-
-@mixin website-header ( $header-color, $body-color ) {
-    h1 {
-        color: $header-color;
-    }
-
-    p {
-        color: $body-color;
-    }
-}
-
-@mixin header ( $fg-color ) {
-    color: $fg-color;
-}

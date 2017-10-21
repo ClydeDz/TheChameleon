@@ -1,0 +1,9 @@
+﻿/* COLOURS */
+@import '../../Colours/_pop';
+
+/* COMPONENTS */
+@import "../_master";
+
+html {
+    @include apply-theme( nth($pop_colours, 1), nth($pop_colours, 2), nth($pop_colours, 3), nth($pop_colours, 4) );
+}

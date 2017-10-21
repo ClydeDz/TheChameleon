@@ -1,4 +1,13 @@
-﻿/* PARTS IN THE THEME PICKER CIRCLE */
+﻿/* COLOURS */
+@import '../Colours/_retro';
+@import '../Colours/_neon';
+@import '../Colours/_vintage';
+@import '../Colours/_fun';
+@import '../Colours/_pop';
+
+$themepicker-color: red;
+
+/* PARTS IN THE THEME PICKER CIRCLE */
 @mixin theme-picker-parts ( $part-1, $part-2, $part-3, $part-4 ) {
     > .part_1 {
         background: $part-1;
@@ -14,5 +23,23 @@
 
     > .part_4 {
         background: $part-4;
+    }
+}
+
+@mixin theme-picker-appearance {
+    &:hover, &:focus {
+        background-color: lighten( $themepicker-color, 47% );
+    }
+
+    &:first-child:hover {
+        background-color: transparent;
+    }
+    
+    &.active {
+        border-top: 3px solid $themepicker-color;
+    }
+
+    .circle {
+        background: gray;
     }
 }

@@ -2,83 +2,80 @@
 /* COMPONENTS */
 /* COMPONENTS */
 /* COMPONENTS */
-@import url("https://fonts.googleapis.com/css?family=Raleway:800");
-@import url("https://fonts.googleapis.com/css?family=Numans");
+/* COLOURS */
 /* PARTS IN THE THEME PICKER CIRCLE */
 /* COLOURS */
-body {
+html {
   /* WEBSITE HEADER */
   /* BUTTONS AND LINKS */
   /* CONTAINERS */
   /* SLIDER */
   /* COLOUR SCHEME */
   /* FOOTER */ }
-  body body {
-    color: #e9e7da; }
-  body .website-header h1 {
-    color: #cd434f; }
-  body .website-header p {
-    color: #e9e7da; }
-  body .btn-main {
-    color: #e9e7da;
-    background-color: #373f27;
-    border-color: #373f27; }
-    body .btn-main:hover, body .btn-main:focus {
-      color: #e9e7da;
-      background-color: #292f1d; }
-  body .btn-inverse {
-    color: #636b46;
+  html body {
+    color: #373f27; }
+  html .website-header h1 {
+    color: #636b46; }
+  html .btn-main {
+    color: #373f27;
     background-color: #e9e7da;
     border-color: #e9e7da; }
-    body .btn-inverse:hover, body .btn-inverse:focus {
-      color: #636b46;
+    html .btn-main:hover, html .btn-main:focus {
+      color: #373f27;
       background-color: #dfddca; }
-  body a.website-links {
-    color: #e9e7da; }
-    body a.website-links:hover, body a.website-links:focus {
-      color: #dfddca;
-      border-bottom-color: #e9e7da; }
-  body .ctn-main {
-    background-color: #373f27; }
-    body .ctn-main h1, body .ctn-main h2, body .ctn-main h3, body .ctn-main p {
-      color: #e9e7da; }
-  body .ctn-general h1, body .ctn-general h2, body .ctn-general h3 {
-    color: #cd434f; }
-  body .slide:before, body .slide:after {
+  html .btn-inverse {
+    color: #cd434f;
+    background-color: #373f27;
+    border-color: #373f27; }
+    html .btn-inverse:hover, html .btn-inverse:focus {
+      color: #cd434f;
+      background-color: #292f1d; }
+  html a.website-links {
+    color: #373f27; }
+    html a.website-links:hover, html a.website-links:focus {
+      color: #292f1d;
+      border-bottom-color: #373f27; }
+  html .ctn-main {
+    background-color: #e9e7da; }
+    html .ctn-main h1, html .ctn-main h2, html .ctn-main h3, html .ctn-main p {
+      color: #373f27; }
+  html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
     color: #636b46; }
-  body #slider-nav a {
-    color: #636b46;
-    border: 1px solid #373f27;
-    background-color: #373f27; }
-    body #slider-nav a.current {
-      border-color: #636b46;
-      background-color: #636b46; }
-  body .colour-scheme.variant_1 {
-    background-color: #cd434f;
-    color: white; }
-    body .colour-scheme.variant_1 p:before {
-      content: "#cd434f"; }
-  body .colour-scheme.variant_2 {
-    background-color: #e9e7da;
-    color: white; }
-    body .colour-scheme.variant_2 p:before {
-      content: "#e9e7da"; }
-  body .colour-scheme.variant_3 {
+  html .slide:before, html .slide:after {
+    color: #cd434f; }
+  html #slider-nav a {
+    color: #cd434f;
+    border: 1px solid #e9e7da;
+    background-color: #e9e7da; }
+    html #slider-nav a.current {
+      border-color: #cd434f;
+      background-color: #cd434f; }
+  html .colour-scheme.variant_1 {
     background-color: #636b46;
     color: white; }
-    body .colour-scheme.variant_3 p:before {
+    html .colour-scheme.variant_1 p:before {
       content: "#636b46"; }
-  body .colour-scheme.variant_4 {
+  html .colour-scheme.variant_2 {
     background-color: #373f27;
     color: white; }
-    body .colour-scheme.variant_4 p:before {
+    html .colour-scheme.variant_2 p:before {
       content: "#373f27"; }
-  body footer {
+  html .colour-scheme.variant_3 {
+    background-color: #cd434f;
+    color: white; }
+    html .colour-scheme.variant_3 p:before {
+      content: "#cd434f"; }
+  html .colour-scheme.variant_4 {
     background-color: #e9e7da;
-    color: #373f27; }
-    body footer a {
-      color: #636b46; }
-      body footer a:hover, body footer a:focus {
-        color: #555c3c;
-        border-bottom-color: #636b46; }
+    color: white; }
+    html .colour-scheme.variant_4 p:before {
+      content: "#e9e7da"; }
+  html footer {
+    background-color: #373f27;
+    color: #e9e7da; }
+    html footer a {
+      color: #cd434f; }
+      html footer a:hover, html footer a:focus {
+        color: #c33440;
+        border-bottom-color: #cd434f; }
 

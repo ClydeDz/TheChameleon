@@ -1,15 +1,10 @@
-﻿/* COLOURS */
-@import '../Colours/_retro';
-@import '../Colours/_neon';
-@import '../Colours/_vintage';
-
-/* COMPONENTS */
+﻿/* COMPONENTS */
 @import "../Components/_theme-picker";
-
-$themepicker-color: red;
+@import "../Components/_breakpoints";
 
 .ctn-theme-picker {
     .theme-picker {
+        @include theme-picker-appearance;
 
         /* APPEARANCE OF THE PICKER */
         display: inline-block;
@@ -17,8 +12,8 @@ $themepicker-color: red;
         padding: 9px 7px;
         border-top: 3px solid transparent;
 
-        &.active {
-            border-top: 3px solid $themepicker-color;
+        @media (max-width: $small-breakpoint) {
+            margin-bottom: 24px;
         }
 
         span {
@@ -27,19 +22,9 @@ $themepicker-color: red;
             position: relative;
             bottom: 4px;
         }
-
-        &:hover, &:focus {
-            background-color: lighten( $themepicker-color, 47% );
-        }
-
-        &:first-child:hover {
-            background-color: transparent;
-        }
-
         /* THEMES */
         .circle {
             border-radius: 50%;
-            background: gray;
             width: 20px;
             height: 20px;
             overflow: hidden;
@@ -58,7 +43,7 @@ $themepicker-color: red;
             }
 
             &.neon {
-                 @include theme-picker-parts( nth($neon_colours, 1), nth($neon_colours, 2), nth($neon_colours, 3), nth($neon_colours, 4) );
+                @include theme-picker-parts( nth($neon_colours, 1), nth($neon_colours, 2), nth($neon_colours, 3), nth($neon_colours, 4) );
             }
 
             &.retro {
@@ -67,6 +52,14 @@ $themepicker-color: red;
 
             &.vintage {
                 @include theme-picker-parts( nth($vintage_colours, 1), nth($vintage_colours, 2), nth($vintage_colours, 3), nth($vintage_colours, 4) );
+            }
+
+            &.fun {
+                @include theme-picker-parts( nth($fun_colours, 1), nth($fun_colours, 2), nth($fun_colours, 3), nth($fun_colours, 4) );
+            }
+
+            &.pop {
+                @include theme-picker-parts( nth($pop_colours, 1), nth($pop_colours, 2), nth($pop_colours, 3), nth($pop_colours, 4) );
             }
         }
     }
