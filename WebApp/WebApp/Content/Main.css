@@ -88,6 +88,7 @@ a.website-links {
   background-size: cover; }
 
 /* COLOURS */
+/* COMPONENTS */
 /* PARTS IN THE THEME PICKER CIRCLE */
 .ctn-theme-picker .theme-picker {
   /* APPEARANCE OF THE PICKER */
@@ -123,21 +124,29 @@ a.website-links {
       width: 25%;
       height: 100%; }
     .ctn-theme-picker .theme-picker .circle.neon > .part_1 {
-      background: #0E0B16; }
-    .ctn-theme-picker .theme-picker .circle.neon > .part_2 {
-      background: #A239CA; }
-    .ctn-theme-picker .theme-picker .circle.neon > .part_3 {
       background: #4717F6; }
+    .ctn-theme-picker .theme-picker .circle.neon > .part_2 {
+      background: #0E0B16; }
+    .ctn-theme-picker .theme-picker .circle.neon > .part_3 {
+      background: #A239CA; }
     .ctn-theme-picker .theme-picker .circle.neon > .part_4 {
       background: #E7DFDD; }
     .ctn-theme-picker .theme-picker .circle.retro > .part_1 {
-      background: #FEDC3D; }
+      background: #01abaa; }
     .ctn-theme-picker .theme-picker .circle.retro > .part_2 {
       background: #000000; }
     .ctn-theme-picker .theme-picker .circle.retro > .part_3 {
-      background: #01abaa; }
+      background: #FEDC3D; }
     .ctn-theme-picker .theme-picker .circle.retro > .part_4 {
       background: #fea680; }
+    .ctn-theme-picker .theme-picker .circle.vintage > .part_1 {
+      background: #cd434f; }
+    .ctn-theme-picker .theme-picker .circle.vintage > .part_2 {
+      background: #e9e7da; }
+    .ctn-theme-picker .theme-picker .circle.vintage > .part_3 {
+      background: #636b46; }
+    .ctn-theme-picker .theme-picker .circle.vintage > .part_4 {
+      background: #373f27; }
 
 .website-header h1 {
   font-size: 7vh; }

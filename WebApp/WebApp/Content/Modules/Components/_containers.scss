@@ -31,11 +31,11 @@ $small-breakpoint: 520px;
     min-height: 300px;
 }
 
-@mixin ctn-main ( $bg-color ) {
+@mixin ctn-main ( $fg-color, $bg-color ) {
     background-color: $bg-color;
 
     h1, h2, h3, p {
-        color: white;
+        color: $fg-color;
     }
 }
 

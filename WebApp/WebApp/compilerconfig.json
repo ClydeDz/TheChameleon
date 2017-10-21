@@ -4,6 +4,10 @@
     "inputFile": "Content/Main.scss"
   },
   {
+    "outputFile": "Content/Vintage.css",
+    "inputFile": "Content/Vintage.scss"
+  },
+  {
     "outputFile": "Content/Neon.css",
     "inputFile": "Content/Neon.scss"
   },

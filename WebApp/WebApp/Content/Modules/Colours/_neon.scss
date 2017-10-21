@@ -2,3 +2,8 @@
 $neon_fuschia: #A239CA;
 $neon_jewel: #4717F6;
 $neon_stark: #E7DFDD;
+
+$pal: $neon_jewel, $neon_void, $neon_fuschia, $neon_stark;
+
+$neon_colours: $pal;
+$theme_colours: $pal;

@@ -1,28 +1,12 @@
 ﻿/* COLOURS */
-@import '../Colours/_retro.scss';
-@import '../Colours/_neon.scss';
+@import '../Colours/_retro';
+@import '../Colours/_neon';
+@import '../Colours/_vintage';
+
+/* COMPONENTS */
+@import "../Components/_theme-picker";
 
 $themepicker-color: red;
-
-/* PARTS IN THE THEME PICKER CIRCLE */
-@mixin theme-picker-parts ( $part-1, $part-2, $part-3, $part-4 ) {
-    > .part_1 {
-        background: $part-1;
-    }
-
-    > .part_2 {
-        background: $part-2;
-    }
-
-    > .part_3 {
-        background: $part-3;
-    }
-
-    > .part_4 {
-        background: $part-4;
-    }
-}
-
 
 .ctn-theme-picker {
     .theme-picker {
@@ -74,11 +58,15 @@ $themepicker-color: red;
             }
 
             &.neon {
-                 @include theme-picker-parts ($neon_void, $neon_fuschia, $neon_jewel, $neon_stark);
+                 @include theme-picker-parts( nth($neon_colours, 1), nth($neon_colours, 2), nth($neon_colours, 3), nth($neon_colours, 4) );
             }
 
             &.retro {
-                @include theme-picker-parts ($retro_butter, $retro_black, $retro_azure, $retro_peach);
+                @include theme-picker-parts( nth($retro_colours, 1), nth($retro_colours, 2), nth($retro_colours, 3), nth($retro_colours, 4) );
+            }
+
+            &.vintage {
+                @include theme-picker-parts( nth($vintage_colours, 1), nth($vintage_colours, 2), nth($vintage_colours, 3), nth($vintage_colours, 4) );
             }
         }
     }

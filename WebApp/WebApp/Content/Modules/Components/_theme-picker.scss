@@ -1,0 +1,18 @@
+﻿/* PARTS IN THE THEME PICKER CIRCLE */
+@mixin theme-picker-parts ( $part-1, $part-2, $part-3, $part-4 ) {
+    > .part_1 {
+        background: $part-1;
+    }
+
+    > .part_2 {
+        background: $part-2;
+    }
+
+    > .part_3 {
+        background: $part-3;
+    }
+
+    > .part_4 {
+        background: $part-4;
+    }
+}

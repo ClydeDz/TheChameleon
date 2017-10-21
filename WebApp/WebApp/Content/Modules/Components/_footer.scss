@@ -3,7 +3,7 @@
     margin-top: 9px;
 }
 
-@mixin footer-appearance ( $bg-color, $fg-color ) {
+@mixin footer-appearance (  $fg-color, $bg-color ) {
     background-color: $bg-color;
     color: $fg-color;
 }

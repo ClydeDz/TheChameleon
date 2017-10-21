@@ -145,6 +145,12 @@
     <Content Include="Content\Main.min.css">
       <DependentUpon>Main.css</DependentUpon>
     </Content>
+    <Content Include="Content\Neon - Copy.css">
+      <DependentUpon>Vintage.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Neon - Copy.min.css">
+      <DependentUpon>Neon - Copy.css</DependentUpon>
+    </Content>
     <Content Include="Content\Neon.css">
       <DependentUpon>Neon.scss</DependentUpon>
     </Content>
@@ -159,6 +165,12 @@
     </Content>
     <Content Include="Content\Vendor\bootstrap.css" />
     <Content Include="Content\Vendor\bootstrap.min.css" />
+    <Content Include="Content\Vintage.css">
+      <DependentUpon>Vintage.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Vintage.min.css">
+      <DependentUpon>Vintage.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -172,10 +184,10 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\Modules\Light\_main.scss" />
+    <Content Include="Content\Modules\Themes\Light\_main.scss" />
     <Content Include="Content\Light.scss" />
     <Content Include="Content\Modules\General\_main.scss" />
-    <Content Include="Content\Modules\Dark\_main.scss" />
+    <Content Include="Content\Modules\Themes\Dark\_main.scss" />
     <Content Include="Content\Dark.scss" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
@@ -183,8 +195,8 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\Main.scss" />
-    <Content Include="Content\Modules\Retro\_main.scss" />
-    <Content Include="Content\Modules\Neon\_main.scss" />
+    <Content Include="Content\Modules\Themes\Retro\_main.scss" />
+    <Content Include="Content\Modules\Themes\Neon\_main.scss" />
     <Content Include="Content\Neon.scss" />
     <Content Include="Content\Retro.scss" />
     <Content Include="Content\Modules\Colours\_neon.scss" />
@@ -202,6 +214,11 @@
     <Content Include="Content\Modules\Components\_text.scss" />
     <Content Include="Content\Modules\Components\_footer.scss" />
     <Content Include="Content\Modules\Components\_loadComponents.scss" />
+    <Content Include="Content\Modules\Themes\_master.scss" />
+    <Content Include="Content\Modules\Components\_theme-picker.scss" />
+    <Content Include="Content\Modules\Colours\_vintage.scss" />
+    <Content Include="Content\Modules\Themes\Vintage\_main.scss" />
+    <Content Include="Content\Vintage.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

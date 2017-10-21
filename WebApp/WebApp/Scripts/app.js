@@ -6,6 +6,9 @@
     el.parentNode.classList.add("active");
 
     switch (theme) {
+        case 'vintage':
+            document.getElementById('CssTheme').href = '../Content/Vintage.min.css';
+            break;
         case 'neon':
             document.getElementById('CssTheme').href = '../Content/Neon.min.css';
             break;
