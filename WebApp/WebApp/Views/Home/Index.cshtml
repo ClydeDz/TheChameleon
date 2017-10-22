@@ -5,7 +5,7 @@
 <div class="container website-header">
     <div class="row">
         <div class="col-xs-12">
-            <img src="~/Images/Icons/cham-retro-circle.png" alt="The Chameleon's icon" />
+            <img src="~/Images/Icons/cham-retro-circle.png" alt="The Chameleon's icon" onclick="trackEvents('Image click', 'Clicked the site logo');" />
         </div>
     </div>
     <div class="row">
@@ -20,15 +20,19 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <a href="#" class="btn btn-main">Primary Button</a>
-            <a href="#" class="btn btn-inverse">Secondary Button</a>
+            <a href="#" class="btn btn-main" onclick="trackEvents('Button click', 'Primary button');">Primary Button</a>
+            <a href="#" class="btn btn-inverse" onclick="trackEvents('Button click', 'Secondary button');">Secondary Button</a>
         </div>
     </div>
 </div>
 
 <div class="wide-container">
-    <div class="half-col ctn-secondary">
-        &nbsp;
+    <div class="half-col">
+        <div class="ctn-secondary">
+            <div>
+                &nbsp;
+            </div>
+        </div>
     </div>
     <div class="half-col ctn-main">
         <h2>Chameleons As Pets?</h2>
@@ -81,10 +85,10 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 text-center">
             <p class="attn-links">
-                <a href="https://en.wikipedia.org/wiki/Chameleon" target="_blank" class="website-links">
+                <a href="https://en.wikipedia.org/wiki/Chameleon" target="_blank" class="website-links" onclick="trackOutboundLink('Link click', 'Wikipedia on chameleon');">
                     <i class="mdi mdi-wikipedia"></i>Chameleon on Wikipedia
                 </a>
-                <a href="https://www.thespruce.com/chameleons-t2-1236756" target="_blank" class="website-links">
+                <a href="https://www.thespruce.com/chameleons-t2-1236756" target="_blank" class="website-links" onclick="trackOutboundLink('Link click', 'The Spruce on chameleon');">
                     <i class="mdi mdi-web"></i>Chameleon on The Spruce
                 </a>
             </p>

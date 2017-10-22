@@ -31,6 +31,10 @@
     .ctn-general {
         @include ctn-generic( $normal );
     }
+
+    .ctn-secondary {
+        @include ctn-secondary( $normal );
+    }
     /* SLIDER */
     .slide {
         &:before, &:after {

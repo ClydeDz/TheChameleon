@@ -41,6 +41,8 @@ html {
       color: #0E0B16; }
   html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
     color: #4717F6; }
+  html .ctn-secondary > div {
+    background-color: rgba(52, 8, 210, 0.4); }
   html .slide:before, html .slide:after {
     color: #A239CA; }
   html .dot {

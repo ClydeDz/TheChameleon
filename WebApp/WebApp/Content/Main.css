@@ -54,7 +54,7 @@ a.website-links {
   @media (max-width: 768px) {
     .half-col {
       width: 100%;
-      display: block; } }
+      display: inline-grid; } }
   @media (min-width: 769px) {
     .half-col {
       width: 50%;
@@ -85,7 +85,12 @@ a.website-links {
 
 .ctn-secondary {
   background: url("https://i.ytimg.com/vi/yZ5mMJROjdg/hqdefault.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%; }
+  .ctn-secondary > div {
+    overflow: hidden;
+    height: 100%;
+    z-index: 2; }
 
 /* COMPONENTS */
 /* COLOURS */
