@@ -4,6 +4,10 @@
     "inputFile": "Content/Main.scss"
   },
   {
+    "outputFile": "Content/Grayscale.css",
+    "inputFile": "Content/Grayscale.scss"
+  },
+  {
     "outputFile": "Content/Pop.css",
     "inputFile": "Content/Pop.scss"
   },

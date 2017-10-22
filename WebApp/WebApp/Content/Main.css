@@ -167,6 +167,14 @@ a.website-links {
       background: #e42d9f; }
     .ctn-theme-picker .theme-picker .circle.pop > .part_4 {
       background: #d7dd35; }
+    .ctn-theme-picker .theme-picker .circle.grayscale > .part_1 {
+      background: #373737; }
+    .ctn-theme-picker .theme-picker .circle.grayscale > .part_2 {
+      background: #0f0f0f; }
+    .ctn-theme-picker .theme-picker .circle.grayscale > .part_3 {
+      background: #848388; }
+    .ctn-theme-picker .theme-picker .circle.grayscale > .part_4 {
+      background: #b7b7af; }
 
 .website-header {
   padding-top: 18px;

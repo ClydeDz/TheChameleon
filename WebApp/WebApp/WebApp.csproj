@@ -133,6 +133,12 @@
     <Content Include="Content\Fun.min.css">
       <DependentUpon>Fun.css</DependentUpon>
     </Content>
+    <Content Include="Content\Grayscale.css">
+      <DependentUpon>Grayscale.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Grayscale.min.css">
+      <DependentUpon>Grayscale.css</DependentUpon>
+    </Content>
     <Content Include="Content\Main.css">
       <DependentUpon>Main.scss</DependentUpon>
     </Content>
@@ -234,6 +240,9 @@
     <Content Include="Content\Modules\Themes\Pop\_main.scss" />
     <Content Include="Content\Pop.scss" />
     <Content Include="Content\Modules\Components\_breakpoints.scss" />
+    <Content Include="Content\Modules\Colours\_grayscale.scss" />
+    <Content Include="Content\Modules\Themes\Grayscale\_main.scss" />
+    <Content Include="Content\Grayscale.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - Web Deploy.pubxml" />

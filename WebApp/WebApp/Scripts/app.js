@@ -6,6 +6,9 @@
     el.parentNode.classList.add("active");
 
     switch (theme) {
+        case 'grayscale':
+            document.getElementById('CssTheme').href = '../Content/Grayscale.min.css';
+            break;
         case 'pop':
             document.getElementById('CssTheme').href = '../Content/Pop.min.css';
             break;

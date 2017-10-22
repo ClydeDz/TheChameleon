@@ -61,6 +61,10 @@
             &.pop {
                 @include theme-picker-parts( nth($pop_colours, 1), nth($pop_colours, 2), nth($pop_colours, 3), nth($pop_colours, 4) );
             }
+
+            &.grayscale {
+                @include theme-picker-parts( nth($grayscale_colours, 1), nth($grayscale_colours, 2), nth($grayscale_colours, 3), nth($grayscale_colours, 4) );
+            }
         }
     }
 }

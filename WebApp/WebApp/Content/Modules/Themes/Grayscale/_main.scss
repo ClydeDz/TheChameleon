@@ -1,0 +1,9 @@
+﻿/* COLOURS */
+@import '../../Colours/_grayscale';
+
+/* COMPONENTS */
+@import "../_master";
+
+html {
+    @include apply-theme( nth($grayscale_colours, 1), nth($grayscale_colours, 2), nth($grayscale_colours, 3), nth($grayscale_colours, 4) );
+}
