@@ -163,8 +163,6 @@
     <Content Include="Content\Retro.min.css">
       <DependentUpon>Retro.css</DependentUpon>
     </Content>
-    <Content Include="Content\Vendor\bootstrap.css" />
-    <Content Include="Content\Vendor\bootstrap.min.css" />
     <Content Include="Content\Vintage.css">
       <DependentUpon>Vintage.scss</DependentUpon>
     </Content>
@@ -243,9 +241,51 @@
     <Content Include="Content\Modules\Colours\_grayscale.scss" />
     <Content Include="Content\Modules\Themes\Grayscale\_main.scss" />
     <Content Include="Content\Grayscale.scss" />
+    <Content Include="Content\Modules\Components\_animation.scss" />
+    <Content Include="Content\Vendor\Bootstrap\bootstrap.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_alerts.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_badges.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_breadcrumbs.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_button-groups.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_buttons.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_carousel.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_close.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_code.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_component-animations.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_dropdowns.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_forms.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_glyphicons.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_grid.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_input-groups.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_jumbotron.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_labels.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_list-group.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_media.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_mixins.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_modals.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_navbar.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_navs.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_normalize.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_pager.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_pagination.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_panels.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_popovers.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_print.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_progress-bars.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_responsive-utilities.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_scaffolding.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_tables.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_theme.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_thumbnails.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_tooltip.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_type.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_utilities.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_variables.scss" />
+    <Content Include="Content\Vendor\Bootstrap\_wells.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - Web Deploy.pubxml" />
+    <Content Include="README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -1,4 +1,7 @@
-﻿/* COLOURS */
+﻿/* COMPONENTS */
+@import "_animation";
+
+/* COLOURS */
 @import '../Colours/_retro';
 @import '../Colours/_neon';
 @import '../Colours/_vintage';
@@ -28,7 +31,10 @@ $themepicker-color: red;
 }
 
 @mixin theme-picker-appearance {
+    @include animate-generic( background-color, 0.5s, ease-in );
+
     &:hover, &:focus {
+        @include animate-generic( background-color, 0.5s, ease-out );
         background-color: lighten( $themepicker-color, 47% );
     }
 
@@ -37,6 +43,7 @@ $themepicker-color: red;
     }
     
     &.active {
+        @include animate-generic( border-top, 0.8s, linear);
         border-top: 3px solid $themepicker-color;
     }
 

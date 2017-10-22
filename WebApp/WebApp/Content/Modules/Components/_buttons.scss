@@ -1,4 +1,15 @@
-﻿@mixin btn-link-generic {
+﻿/* COMPONENTS */
+@import "_breakpoints";
+@import "_animation";
+
+@mixin btn-link-generic {
+    @include animate-generic( all, 0.5s, ease );
+
+    @media (max-width: $small-breakpoint) {
+        margin: 9px 0;
+        padding: 9px;
+    }
+
     margin: 9px 9px 9px 0;
     padding: 9px 18px;
     text-decoration: none !important;

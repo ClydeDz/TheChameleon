@@ -1,8 +1,14 @@
-﻿.website-header {
+﻿/* COMPONENTS */
+@import "../Components/_breakpoints";
+
+.website-header {
     padding-top: 18px;
     padding-bottom: 18px;
 
     h1 {
+        @media (max-width: $small-breakpoint) {
+            font-size: 6.5vh;
+        }
         font-size: 7vh;
         margin: 20px 0;
     }

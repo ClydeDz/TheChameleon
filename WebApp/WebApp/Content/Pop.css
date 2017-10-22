@@ -2,6 +2,47 @@
 /* COMPONENTS */
 /* COMPONENTS */
 /* COMPONENTS */
+/* COMPONENTS */
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* COMPONENTS */
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* FUNCTIONS */
+/* MIXINS */
+/* COMPONENTS */
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
 /* COLOURS */
 /* PARTS IN THE THEME PICKER CIRCLE */
 /* COLOURS */
@@ -54,30 +95,70 @@ html {
       background-color: #e42d9f; }
   html .colour-scheme.variant_1 {
     background-color: #575da9;
-    color: white; }
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+    html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
+      -webkit-transition: background-color 0.5s ease-in;
+      -moz-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+      background-color: #686db2; }
     html .colour-scheme.variant_1 p:before {
       content: "#575da9"; }
   html .colour-scheme.variant_2 {
     background-color: #02558b;
-    color: white; }
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+    html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
+      -webkit-transition: background-color 0.5s ease-in;
+      -moz-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+      background-color: #0264a4; }
     html .colour-scheme.variant_2 p:before {
       content: "#02558b"; }
   html .colour-scheme.variant_3 {
     background-color: #e42d9f;
-    color: white; }
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+    html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
+      -webkit-transition: background-color 0.5s ease-in;
+      -moz-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+      background-color: #e744a9; }
     html .colour-scheme.variant_3 p:before {
       content: "#e42d9f"; }
   html .colour-scheme.variant_4 {
     background-color: #d7dd35;
-    color: white; }
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+    html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
+      -webkit-transition: background-color 0.5s ease-in;
+      -moz-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+      background-color: #dbe14b; }
     html .colour-scheme.variant_4 p:before {
       content: "#d7dd35"; }
   html footer {
     background-color: #02558b;
     color: #d7dd35; }
-    html footer a {
+    html footer a, html footer a.website-links {
       color: #e42d9f; }
-      html footer a:hover, html footer a:focus {
+      html footer a:hover, html footer a:focus, html footer a.website-links:hover, html footer a.website-links:focus {
         color: #db1c93;
         border-bottom-color: #e42d9f; }
 

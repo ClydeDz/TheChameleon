@@ -3,6 +3,10 @@
 @import "../Components/_breakpoints";
 
 .ctn-theme-picker {
+    @media (max-width: $small-breakpoint) {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .theme-picker {
         @include theme-picker-appearance;
 
@@ -14,6 +18,15 @@
 
         @media (max-width: $small-breakpoint) {
             margin-bottom: 24px;
+
+            &:first-child {
+                display: block;
+                margin-bottom: 0;
+            }
+        }
+
+         &:first-child:hover {
+            background-color: transparent;
         }
 
         span {

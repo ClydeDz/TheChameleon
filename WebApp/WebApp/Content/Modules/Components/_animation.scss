@@ -1,0 +1,34 @@
+﻿@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@mixin animate-fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@mixin animate-generic( $property, $value, $type ) {
+    -webkit-transition: $property $value $type;
+    -moz-transition: $property $value $type;
+    -o-transition: $property $value $type;
+    transition: $property $value $type;
+}

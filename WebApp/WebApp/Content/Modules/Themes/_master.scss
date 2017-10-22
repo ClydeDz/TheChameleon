@@ -57,7 +57,7 @@
     footer {
         @include footer-appearance( $light, $xtra-dark );
 
-        a {
+        a, a.website-links {
             @include link( $xtra-bright );
         }
     }

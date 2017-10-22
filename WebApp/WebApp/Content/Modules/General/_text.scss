@@ -1,5 +1,6 @@
 ﻿/* COMPONENTS */
 @import "../Components/_text";
+@import "../Components/_breakpoints";
 
 h1, h2, h3 {
     font-weight: 700;
@@ -7,10 +8,16 @@ h1, h2, h3 {
 }
 
 h2, h3{
+    @media (max-width: $small-breakpoint) {
+       font-size: 5.5vh;
+    }
     font-size: 6vh;
 }
 
 body {
+    @media (max-width: $small-breakpoint) {
+       font-size: 18px;
+    }
     font-size: 20px;
     font-family: $body-font;
 }

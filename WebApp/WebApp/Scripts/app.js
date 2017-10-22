@@ -37,7 +37,7 @@
     }
 
     // Send GA tracking data
-    trackEvents('Button click', 'Theme picker. Theme selected ' + theme);
+    trackEvents('Theme button click', 'Theme picker. Theme selected ' + theme);
 }
 
 /*
@@ -70,7 +70,7 @@ function currentSlide(n) {
     /// <summary>Set the current index of the slider.</summary>
     /// <param name="n" type="number">The slide number requested.</param> 
     showSlides(slideIndex = n);
-    trackEvents('Button click', 'Slider navigation button. Slide number ' + n);
+    trackEvents('Slider nav button click', 'Slider navigation button. Slide number ' + n);
 }
 
 function showSlides(n) {
@@ -92,7 +92,7 @@ function showSlides(n) {
 }
 
 // Default the slider to the first slide on page load.
-currentSlide(1);
+showSlides(slideIndex = 1);
 
 /*
 MISC

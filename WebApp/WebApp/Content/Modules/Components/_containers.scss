@@ -1,29 +1,35 @@
-﻿$large-breakpoint: 1024px;
-$medium-breakpoint: 968px;
-$small-breakpoint: 520px;
+﻿/* COMPONENTS */
+@import "_breakpoints";
+@import "_animation";
 
+/* FUNCTIONS */
+@function getHexCode( $hex-code ) {
+     @return "" + $hex-code;
+}
+
+/* MIXINS */
 @mixin wide-container {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin: 24px 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: $even-breakpoint) {
         display: inline-block;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: $even-breakpoint) {
         display: inline-flex;
     }
 }
 
 @mixin half-col {
-    @media(max-width: 768px) {
+    @media(max-width: $even-breakpoint) {
         width: 100%;
         display: inline-grid;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: $even-breakpoint) {
         width: 50%;
         display: inline-block;
     }
@@ -32,7 +38,7 @@ $small-breakpoint: 520px;
     min-height: 300px;
 }
 
-@mixin ctn-main ( $fg-color, $bg-color ) {
+@mixin ctn-main( $fg-color, $bg-color ) {
     background-color: $bg-color;
 
     h1, h2, h3, p {
@@ -40,13 +46,13 @@ $small-breakpoint: 520px;
     }
 }
 
-@mixin ctn-generic ( $fg-color ) {
+@mixin ctn-generic( $fg-color ) {
     h1, h2, h3 {
         color: $fg-color;
     }
 }
 
-@mixin ctn-secondary ( $bg-color ) {
+@mixin ctn-secondary( $bg-color ) {
     > div {
         background-color: transparentize( darken( $bg-color, 10% ), 0.6 );
     }
@@ -74,16 +80,22 @@ $small-breakpoint: 520px;
     }
 }
 
-@mixin colour-variant ( $bg-color ) {
+@mixin colour-variant( $bg-color ) {
     background-color: $bg-color;
     color: white;
+    @include animate-generic( background-color, 0.5s, ease-out );
+
+    &:hover, &:focus{
+        @include animate-generic( background-color, 0.5s, ease-in );
+        background-color: lighten( $bg-color, 5% );
+    }
 
     p:before {
-        content: "" + $bg-color;
+        content: getHexCode( $bg-color );
     }
 }
 
-@mixin colour-variant-parts ($part-1, $part-2, $part-3, $part-4) {
+@mixin colour-variant-parts($part-1, $part-2, $part-3, $part-4) {
     &.variant_1 {
         @include colour-variant( $part-1 );
     }
