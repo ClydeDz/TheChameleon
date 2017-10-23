@@ -62,19 +62,19 @@ html {
   html .website-header h1 {
     color: #636b46; }
   html .btn-main {
-    color: #373f27;
     background-color: #e9e7da;
-    border-color: #e9e7da; }
+    border-color: #e9e7da;
+    color: #373f27; }
     html .btn-main:hover, html .btn-main:focus {
-      color: #373f27;
-      background-color: #dfddca; }
+      background-color: #dfddca;
+      color: #373f27; }
   html .btn-inverse {
-    color: #cd434f;
     background-color: #373f27;
-    border-color: #373f27; }
+    border-color: #373f27;
+    color: #cd434f; }
     html .btn-inverse:hover, html .btn-inverse:focus {
-      color: #cd434f;
-      background-color: #292f1d; }
+      background-color: #292f1d;
+      color: #cd434f; }
   html a.website-links {
     color: #373f27; }
     html a.website-links:hover, html a.website-links:focus {
@@ -98,12 +98,12 @@ html {
       border-color: #cd434f;
       background-color: #cd434f; }
   html .colour-scheme.variant_1 {
-    background-color: #636b46;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #636b46;
+    color: white; }
     html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -113,12 +113,12 @@ html {
     html .colour-scheme.variant_1 p:before {
       content: "#636b46"; }
   html .colour-scheme.variant_2 {
-    background-color: #373f27;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #373f27;
+    color: white; }
     html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -128,12 +128,12 @@ html {
     html .colour-scheme.variant_2 p:before {
       content: "#373f27"; }
   html .colour-scheme.variant_3 {
-    background-color: #cd434f;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #cd434f;
+    color: white; }
     html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -143,12 +143,12 @@ html {
     html .colour-scheme.variant_3 p:before {
       content: "#cd434f"; }
   html .colour-scheme.variant_4 {
-    background-color: #e9e7da;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #e9e7da;
+    color: white; }
     html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;

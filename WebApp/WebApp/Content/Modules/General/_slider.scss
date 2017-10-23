@@ -18,13 +18,12 @@
             font-size: 50px;
         }
 
-            &:after {
-                content: "\201D";
-                position: relative;
-                left: 50px;
-                font-size: 50px;
-            }
-        
+        &:after {
+            content: "\201D";
+            position: relative;
+            left: 50px;
+            font-size: 50px;
+        }
         /* Caption text */
         .text {
             padding: 14px 12px;
@@ -52,4 +51,3 @@
 .fade {
     @include animate-fade;
 }
-

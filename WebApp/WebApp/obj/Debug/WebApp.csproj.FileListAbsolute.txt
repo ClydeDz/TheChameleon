@@ -35,6 +35,5 @@ F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\Syste
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\System.Web.WebPages.Razor.xml
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\Antlr3.Runtime.pdb
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\Newtonsoft.Json.xml
-F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.dll
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.pdb

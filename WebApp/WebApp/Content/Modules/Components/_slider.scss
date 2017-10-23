@@ -1,14 +1,14 @@
-﻿@mixin slider-nav-a ( $fg-color, $bg-color ) {
+﻿@mixin slider-nav-a( $fg-color, $bg-color ) {
       color: $fg-color;
       border: 1px solid $bg-color;
       background-color: $bg-color;
 }
 
-@mixin slider-nav-a-current ( $fg-color, $bg-color ) {
+@mixin slider-nav-a-current( $fg-color, $bg-color ) {
      border-color: $bg-color;
      background-color: $bg-color;
 }
 
-@mixin quotations ( $fg-color ) {
+@mixin quotations( $fg-color ) {
     color: $fg-color;
 }

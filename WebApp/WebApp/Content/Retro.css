@@ -62,19 +62,19 @@ html {
   html .website-header h1 {
     color: #01abaa; }
   html .btn-main {
-    color: #000000;
     background-color: #fea680;
-    border-color: #fea680; }
+    border-color: #fea680;
+    color: #000000; }
     html .btn-main:hover, html .btn-main:focus {
-      color: #000000;
-      background-color: #fe9467; }
+      background-color: #fe9467;
+      color: #000000; }
   html .btn-inverse {
-    color: #FEDC3D;
     background-color: #000000;
-    border-color: #000000; }
+    border-color: #000000;
+    color: #FEDC3D; }
     html .btn-inverse:hover, html .btn-inverse:focus {
-      color: #FEDC3D;
-      background-color: black; }
+      background-color: black;
+      color: #FEDC3D; }
   html a.website-links {
     color: #000000; }
     html a.website-links:hover, html a.website-links:focus {
@@ -98,12 +98,12 @@ html {
       border-color: #FEDC3D;
       background-color: #FEDC3D; }
   html .colour-scheme.variant_1 {
-    background-color: #01abaa;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #01abaa;
+    color: white; }
     html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -113,12 +113,12 @@ html {
     html .colour-scheme.variant_1 p:before {
       content: "#01abaa"; }
   html .colour-scheme.variant_2 {
-    background-color: #000000;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #000000;
+    color: white; }
     html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -128,12 +128,12 @@ html {
     html .colour-scheme.variant_2 p:before {
       content: "#000000"; }
   html .colour-scheme.variant_3 {
-    background-color: #FEDC3D;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #FEDC3D;
+    color: white; }
     html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;
@@ -143,12 +143,12 @@ html {
     html .colour-scheme.variant_3 p:before {
       content: "#FEDC3D"; }
   html .colour-scheme.variant_4 {
-    background-color: #fea680;
-    color: white;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out; }
+    transition: background-color 0.5s ease-out;
+    background-color: #fea680;
+    color: white; }
     html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
       -webkit-transition: background-color 0.5s ease-in;
       -moz-transition: background-color 0.5s ease-in;

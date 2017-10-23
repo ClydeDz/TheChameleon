@@ -1,9 +1,9 @@
-﻿@mixin website-header ( $header-color ) {
+﻿@mixin website-header( $header-color ) {
     h1 {
         color: $header-color;
     }
 }
 
-@mixin header ( $fg-color ) {
+@mixin header( $fg-color ) {
     color: $fg-color;
 }

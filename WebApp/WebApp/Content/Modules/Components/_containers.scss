@@ -9,11 +9,6 @@
 
 /* MIXINS */
 @mixin wide-container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 24px 0;
-
     @media(max-width: $even-breakpoint) {
         display: inline-block;
     }
@@ -21,6 +16,11 @@
     @media(min-width: $even-breakpoint) {
         display: inline-flex;
     }
+    
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 24px 0;
 }
 
 @mixin half-col {
@@ -81,9 +81,10 @@
 }
 
 @mixin colour-variant( $bg-color ) {
+    @include animate-generic( background-color, 0.5s, ease-out );
+
     background-color: $bg-color;
     color: white;
-    @include animate-generic( background-color, 0.5s, ease-out );
 
     &:hover, &:focus{
         @include animate-generic( background-color, 0.5s, ease-in );
