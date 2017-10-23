@@ -7,6 +7,10 @@
     body {
         color: $xtra-dark;
     }
+    /* THEME PICKER */
+    .ctn-theme-picker {
+        @include theme-picker-container( $normal );
+    }
     /* WEBSITE HEADER */
     .website-header {
         @include website-header( $normal );

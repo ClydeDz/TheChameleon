@@ -1,4 +1,7 @@
-﻿function updateSiteTheme(theme, el) {
+﻿/*
+THEME PICKER
+*********************************/
+function updateSiteTheme(theme, el) {
     /// <summary>Updates the theme of the website.</summary>
     /// <param name="theme" type="string">The new theme to change to.</param> 
     /// <param name="el" type="element">The theme picker circle that the user clicked on.</param> 
@@ -44,14 +47,34 @@
 GOOGLE ANALYTICS
 *********************************/
 function trackOutboundLink(action, label) {
+    /// <summary>Method to send Google Analytics outbound tracking data.</summary>
+    /// <param name="action" type="string">The action that caused this event to trigger.</param> 
+    /// <param name="label" type="string">The outbound link details.</param> 
     sendGoogleAnalyticsEventData( 'click', 'outbound', action, label );
 }
 
 function trackEvents(action, label) {
+    /// <summary>Method to send Google Analytics interaction events data.</summary>
+    /// <param name="action" type="string">The action that caused this event to trigger.</param> 
+    /// <param name="label" type="string">The details of the interaction.</param> 
     sendGoogleAnalyticsEventData( 'click', 'events', action, label );
 }
 
+function trackExceptions(error) {
+    /// <summary>Method to send Google Analytics exception data.</summary>
+    /// <param name="error" type="string">The exception message that has been caught.</param> 
+    gtag('event', 'exception', {
+        'description': error,
+        'fatal': false
+    });
+}
+
 function sendGoogleAnalyticsEventData(eventType, category, action, label) {
+    /// <summary>Base method to send Google Analytics event data.</summary>
+    /// <param name="eventType" type="string">The type of event.</param> 
+    /// <param name="category" type="string">A custom message for the category of this event.</param> 
+    /// <param name="action" type="string">A string for the action of this event.</param>
+    /// <param name="label" type="string">A string for the label value of this event.</param> 
     gtag('event', eventType, {
         'event_category': getLowercase( category ),
         'event_action': getLowercase( action ),
@@ -103,7 +126,8 @@ function getLowercase(value) {
     try {
         return value.toLowerCase();
     }
-    catch ( ex ) {
+    catch (ex) {
+        trackExceptions( ex.message );
         console.log("Exception at getLowercase() " + ex);
         return value;
     }

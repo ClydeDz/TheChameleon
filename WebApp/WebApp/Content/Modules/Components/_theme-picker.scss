@@ -11,6 +11,11 @@
 
 $themepicker-color: red;
 
+@mixin theme-picker-container( $border-colour ) {
+    background-color: transparentize( white, 0.1 );
+    border-bottom: 1px solid transparentize( $border-colour, 0.9 );
+}
+
 /* PARTS IN THE THEME PICKER CIRCLE */
 @mixin theme-picker-parts ( $part-1, $part-2, $part-3, $part-4 ) {
     > .part_1 {

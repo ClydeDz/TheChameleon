@@ -47,6 +47,7 @@
 /* PARTS IN THE THEME PICKER CIRCLE */
 /* COLOURS */
 html {
+  /* THEME PICKER */
   /* WEBSITE HEADER */
   /* BUTTONS AND LINKS */
   /* CONTAINERS */
@@ -55,6 +56,9 @@ html {
   /* FOOTER */ }
   html body {
     color: #000000; }
+  html .ctn-theme-picker {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(1, 171, 170, 0.1); }
   html .website-header h1 {
     color: #01abaa; }
   html .btn-main {

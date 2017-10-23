@@ -2,8 +2,12 @@
 @import "../Components/_breakpoints";
 
 .website-header {
-    padding-top: 18px;
+    padding-top: 64px;
     padding-bottom: 18px;
+    
+    @media (max-width: $small-breakpoint) {
+        padding-top: 104px;
+    }
 
     h1 {
         @media (max-width: $small-breakpoint) {

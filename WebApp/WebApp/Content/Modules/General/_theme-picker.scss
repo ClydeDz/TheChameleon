@@ -2,7 +2,13 @@
 @import "../Components/_theme-picker";
 @import "../Components/_breakpoints";
 
-.ctn-theme-picker {
+.ctn-theme-picker {    
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
     @media (max-width: $small-breakpoint) {
         padding-left: 0;
         padding-right: 0;
@@ -17,7 +23,6 @@
         border-top: 3px solid transparent;
 
         @media (max-width: $small-breakpoint) {
-            margin-bottom: 24px;
 
             &:first-child {
                 display: block;
