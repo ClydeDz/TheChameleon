@@ -37,3 +37,4 @@ F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\Antlr
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\bin\Newtonsoft.Json.xml
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.dll
 F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.pdb
+F:\Application Projects\ApplicationProjects\TheChameleon\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache

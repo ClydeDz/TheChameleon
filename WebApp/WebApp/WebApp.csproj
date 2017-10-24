@@ -283,6 +283,7 @@
     <Content Include="Content\Vendor\Bootstrap\_utilities.scss" />
     <Content Include="Content\Vendor\Bootstrap\_variables.scss" />
     <Content Include="Content\Vendor\Bootstrap\_wells.scss" />
+    <Content Include="Content\Modules\Components\_mobile.scss" />
     <None Include="Properties\PublishProfiles\Publish locally.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\thechameleon-web - Web Deploy.pubxml" />

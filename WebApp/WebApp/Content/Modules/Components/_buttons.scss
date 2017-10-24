@@ -1,11 +1,12 @@
 ﻿/* COMPONENTS */
 @import "_breakpoints";
 @import "_animation";
+@import "_mobile";
 
-@mixin btn-link-generic {
+%btn-link-generic {
     @include animate-generic( all, 0.5s, ease );
 
-    @media (max-width: $small-breakpoint) {
+    @include mobile-bp( $max-width, $small-breakpoint ) {
         margin: 9px 0;
         padding: 9px;
     }
@@ -18,8 +19,8 @@
     border: 1px solid transparent;
 }
 
-@mixin btn-generic {
-    @include btn-link-generic;
+%btn-generic {
+    @extend %btn-link-generic;
     border-radius: 30px;
 }
 
@@ -42,8 +43,8 @@
     @include btn-main-inverse( $fg-color, $bg-color );
 }
 
-@mixin link-generic {
-    @include btn-link-generic;
+%link-generic {
+    @extend %btn-link-generic;
 
     &:hover, &:focus {
         border-bottom: 1px dashed;

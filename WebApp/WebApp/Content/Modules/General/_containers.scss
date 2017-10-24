@@ -1,32 +1,32 @@
 ﻿/* COMPONENTS */
 @import "../Components/_containers";
 
-.wide-container{
-    @include wide-container;
+.wide-container {
+    @extend %wide-container;
 }
 
-.half-col{
-    @include half-col;
+.half-col {
+    @extend %half-col;
 }
 
-.colour-scheme{
-    @include colour-scheme;
+.colour-scheme {
+    @extend %colour-scheme;
 }
 
-.ctn-main{
+.ctn-main {
     padding: 9px 18px;
 }
 
 .attn-links {
-    @include attn-links;
+    @extend %attn-links;
 }
 
-.ctn-secondary{
+.ctn-secondary {
     background: url('https://i.ytimg.com/vi/yZ5mMJROjdg/hqdefault.jpg') no-repeat center;
     background-size: cover;
     height: 100%;
-    
-    > div{
+
+    > div {
         overflow: hidden;
         height: 100%;
         z-index: 2;

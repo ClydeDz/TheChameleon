@@ -1,6 +1,7 @@
 ﻿/* COMPONENTS */
 @import "_breakpoints";
 @import "_animation";
+@import "_mobile";
 
 /* FUNCTIONS */
 @function getHexCode( $hex-code ) {
@@ -8,12 +9,13 @@
 }
 
 /* MIXINS */
-@mixin wide-container {
-    @media(max-width: $even-breakpoint) {
+%wide-container {
+
+    @include mobile-bp( $max-width, $even-breakpoint ) {
         display: inline-block;
     }
 
-    @media(min-width: $even-breakpoint) {
+    @include mobile-bp( $min-width, $even-breakpoint ) {
         display: inline-flex;
     }
     
@@ -23,13 +25,13 @@
     margin: 24px 0;
 }
 
-@mixin half-col {
-    @media(max-width: $even-breakpoint) {
+%half-col {
+    @include mobile-bp( $max-width, $even-breakpoint ) {
         width: 100%;
         display: inline-grid;
     }
 
-    @media(min-width: $even-breakpoint) {
+    @include mobile-bp( $min-width, $even-breakpoint ) {
         width: 50%;
         display: inline-block;
     }
@@ -58,7 +60,7 @@
     }
 }
 
-@mixin colour-scheme {
+%colour-scheme {
     display: inline-block;
     min-height: 200px;
 
@@ -114,6 +116,6 @@
     }
 }
 
-@mixin attn-links {
+%attn-links {
     padding: 18px 9px;
 }

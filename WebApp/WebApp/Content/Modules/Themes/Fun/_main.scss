@@ -5,5 +5,5 @@
 @import "../_master";
 
 html {
-    @include apply-theme( nth($fun_colours, 1), nth($fun_colours, 2), nth($fun_colours, 3), nth($fun_colours, 4) );
+    @include apply-theme( $fun_colours... );
 }

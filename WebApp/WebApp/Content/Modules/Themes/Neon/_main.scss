@@ -5,5 +5,5 @@
 @import "../_master";
 
 html {
-    @include apply-theme( nth($neon_colours, 1), nth($neon_colours, 2), nth($neon_colours, 3), nth($neon_colours, 4) );
+    @include apply-theme( $neon_colours... );
 }

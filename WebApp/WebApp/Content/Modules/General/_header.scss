@@ -1,8 +1,9 @@
 ﻿/* COMPONENTS */
 @import "../Components/_breakpoints";
+@import "../Components/_mobile";
 
 .website-header {
-    @media (max-width: $small-breakpoint) {
+    @include mobile-bp( $max-width, $small-breakpoint ) {
         padding-top: 104px;
     }
 
@@ -10,7 +11,7 @@
     padding-bottom: 18px;
 
     h1 {
-        @media (max-width: $small-breakpoint) {
+        @include mobile-bp( $max-width, $small-breakpoint ) {
             font-size: 6.5vh;
         }
         font-size: 7vh;

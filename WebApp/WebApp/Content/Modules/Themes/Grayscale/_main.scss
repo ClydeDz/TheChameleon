@@ -5,5 +5,5 @@
 @import "../_master";
 
 html {
-    @include apply-theme( nth($grayscale_colours, 1), nth($grayscale_colours, 2), nth($grayscale_colours, 3), nth($grayscale_colours, 4) );
+    @include apply-theme( $grayscale_colours... );
 }

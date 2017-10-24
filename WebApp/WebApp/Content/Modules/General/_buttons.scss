@@ -1,14 +1,14 @@
 ﻿/* COMPONENTS */
 @import "../Components/_buttons";
 
-.btn-main{
-    @include btn-generic;
+.btn-main {
+    @extend %btn-generic;
 }
 
-.btn-inverse{
-    @include btn-generic;
+.btn-inverse {
+    @extend %btn-generic;
 }
 
 a.website-links {
-    @include link-generic;
+    @extend %link-generic;
 }

@@ -1,9 +1,10 @@
 ﻿/* COMPONENTS */
 @import "../Components/_theme-picker";
 @import "../Components/_breakpoints";
+@import "../Components/_mobile";
 
 .ctn-theme-picker {    
-    @media (max-width: $small-breakpoint) {
+    @include mobile-bp( $max-width, $small-breakpoint ) {
         padding-left: 0;
         padding-right: 0;
     }
@@ -17,7 +18,7 @@
     .theme-picker {
         @include theme-picker-appearance;
 
-        @media (max-width: $small-breakpoint) {
+        @include mobile-bp( $max-width, $small-breakpoint ) {
             &:first-child {
                 display: block;
                 margin-bottom: 0;
