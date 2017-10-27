@@ -1,4 +1,4 @@
-﻿/* COMPONENTS */
+﻿// COMPONENTS 
 @import "../Components/_theme-picker";
 @import "../Components/_breakpoints";
 @import "../Components/_mobile";
@@ -25,7 +25,7 @@
             }
         }
 
-        /* APPEARANCE OF THE PICKER */
+        // APPEARANCE OF THE PICKER 
         display: inline-block;
         background-color: transparent;
         padding: 9px 7px;
@@ -41,7 +41,7 @@
             position: relative;
             bottom: 4px;
         }
-        /* THEMES */
+        // THEMES
         .circle {
             border-radius: 50%;
             width: 20px;
@@ -62,27 +62,27 @@
             }
 
             &.neon {
-                @include theme-picker-parts( nth($neon_colours, 1), nth($neon_colours, 2), nth($neon_colours, 3), nth($neon_colours, 4) );
+                @include theme-picker-parts( $neon_colours... );
             }
 
             &.retro {
-                @include theme-picker-parts( nth($retro_colours, 1), nth($retro_colours, 2), nth($retro_colours, 3), nth($retro_colours, 4) );
+                @include theme-picker-parts( $retro_colours... );
             }
 
             &.vintage {
-                @include theme-picker-parts( nth($vintage_colours, 1), nth($vintage_colours, 2), nth($vintage_colours, 3), nth($vintage_colours, 4) );
+                @include theme-picker-parts( $vintage_colours... );
             }
 
             &.fun {
-                @include theme-picker-parts( nth($fun_colours, 1), nth($fun_colours, 2), nth($fun_colours, 3), nth($fun_colours, 4) );
+                @include theme-picker-parts( $fun_colours... );
             }
 
             &.pop {
-                @include theme-picker-parts( nth($pop_colours, 1), nth($pop_colours, 2), nth($pop_colours, 3), nth($pop_colours, 4) );
+                @include theme-picker-parts( $pop_colours... );
             }
 
             &.grayscale {
-                @include theme-picker-parts( nth($grayscale_colours, 1), nth($grayscale_colours, 2), nth($grayscale_colours, 3), nth($grayscale_colours, 4) );
+                @include theme-picker-parts( $grayscale_colours... );
             }
         }
     }

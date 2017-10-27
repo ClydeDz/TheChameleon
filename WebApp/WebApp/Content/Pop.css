@@ -1,8 +1,15 @@
-﻿/* COLOURS */
-/* COMPONENTS */
-/* COMPONENTS */
-/* COMPONENTS */
-/* COMPONENTS */
+﻿@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -15,9 +22,6 @@
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -30,143 +34,130 @@
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
-/* FUNCTIONS */
-/* MIXINS */
-/* COMPONENTS */
-@-webkit-keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
+html body {
+  color: #02558b; }
 
-@keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
+html .ctn-theme-picker {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(87, 93, 169, 0.1); }
 
-/* COLOURS */
-/* PARTS IN THE THEME PICKER CIRCLE */
-/* COLOURS */
-html {
-  /* THEME PICKER */
-  /* WEBSITE HEADER */
-  /* BUTTONS AND LINKS */
-  /* CONTAINERS */
-  /* SLIDER */
-  /* COLOUR SCHEME */
-  /* FOOTER */ }
-  html body {
+html .website-header h1 {
+  color: #575da9; }
+
+html .btn-main {
+  background-color: #d7dd35;
+  border-color: #d7dd35;
+  color: #02558b; }
+  html .btn-main:hover, html .btn-main:focus {
+    background-color: #ced524;
     color: #02558b; }
-  html .ctn-theme-picker {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid rgba(87, 93, 169, 0.1); }
-  html .website-header h1 {
-    color: #575da9; }
-  html .btn-main {
-    background-color: #d7dd35;
-    border-color: #d7dd35;
-    color: #02558b; }
-    html .btn-main:hover, html .btn-main:focus {
-      background-color: #ced524;
-      color: #02558b; }
-  html .btn-inverse {
-    background-color: #02558b;
-    border-color: #02558b;
+
+html .btn-inverse {
+  background-color: #02558b;
+  border-color: #02558b;
+  color: #e42d9f; }
+  html .btn-inverse:hover, html .btn-inverse:focus {
+    background-color: #024672;
     color: #e42d9f; }
-    html .btn-inverse:hover, html .btn-inverse:focus {
-      background-color: #024672;
-      color: #e42d9f; }
-  html a.website-links {
+
+html a.website-links {
+  color: #02558b; }
+  html a.website-links:hover, html a.website-links:focus {
+    color: #024672;
+    border-bottom-color: #02558b; }
+
+html .ctn-main {
+  background-color: #d7dd35; }
+  html .ctn-main h1, html .ctn-main h2, html .ctn-main h3, html .ctn-main p {
     color: #02558b; }
-    html a.website-links:hover, html a.website-links:focus {
-      color: #024672;
-      border-bottom-color: #02558b; }
-  html .ctn-main {
-    background-color: #d7dd35; }
-    html .ctn-main h1, html .ctn-main h2, html .ctn-main h3, html .ctn-main p {
-      color: #02558b; }
-  html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
-    color: #575da9; }
-  html .ctn-secondary > div {
-    background-color: rgba(69, 74, 136, 0.4); }
-  html .slide:before, html .slide:after {
+
+html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
+  color: #575da9; }
+
+html .ctn-secondary > div {
+  background-color: rgba(69, 74, 136, 0.4); }
+
+html .slide:before, html .slide:after {
+  color: #e42d9f; }
+
+html .dot {
+  color: #e42d9f;
+  border: 1px solid #d7dd35;
+  background-color: #d7dd35; }
+  html .dot.active {
+    border-color: #e42d9f;
+    background-color: #e42d9f; }
+
+html .colour-scheme.variant_1 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #575da9;
+  color: white; }
+  html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #686db2; }
+  html .colour-scheme.variant_1 p:before {
+    content: "#575da9"; }
+
+html .colour-scheme.variant_2 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #02558b;
+  color: white; }
+  html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #0264a4; }
+  html .colour-scheme.variant_2 p:before {
+    content: "#02558b"; }
+
+html .colour-scheme.variant_3 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #e42d9f;
+  color: white; }
+  html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #e744a9; }
+  html .colour-scheme.variant_3 p:before {
+    content: "#e42d9f"; }
+
+html .colour-scheme.variant_4 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #d7dd35;
+  color: white; }
+  html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #dbe14b; }
+  html .colour-scheme.variant_4 p:before {
+    content: "#d7dd35"; }
+
+html footer {
+  background-color: #02558b;
+  color: #d7dd35; }
+  html footer a, html footer a.website-links {
     color: #e42d9f; }
-  html .dot {
-    color: #e42d9f;
-    border: 1px solid #d7dd35;
-    background-color: #d7dd35; }
-    html .dot.active {
-      border-color: #e42d9f;
-      background-color: #e42d9f; }
-  html .colour-scheme.variant_1 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #575da9;
-    color: white; }
-    html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #686db2; }
-    html .colour-scheme.variant_1 p:before {
-      content: "#575da9"; }
-  html .colour-scheme.variant_2 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #02558b;
-    color: white; }
-    html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #0264a4; }
-    html .colour-scheme.variant_2 p:before {
-      content: "#02558b"; }
-  html .colour-scheme.variant_3 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #e42d9f;
-    color: white; }
-    html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #e744a9; }
-    html .colour-scheme.variant_3 p:before {
-      content: "#e42d9f"; }
-  html .colour-scheme.variant_4 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #d7dd35;
-    color: white; }
-    html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #dbe14b; }
-    html .colour-scheme.variant_4 p:before {
-      content: "#d7dd35"; }
-  html footer {
-    background-color: #02558b;
-    color: #d7dd35; }
-    html footer a, html footer a.website-links {
-      color: #e42d9f; }
-      html footer a:hover, html footer a:focus, html footer a.website-links:hover, html footer a.website-links:focus {
-        color: #db1c93;
-        border-bottom-color: #e42d9f; }
+    html footer a:hover, html footer a:focus, html footer a.website-links:hover, html footer a.website-links:focus {
+      color: #db1c93;
+      border-bottom-color: #e42d9f; }
 

@@ -1,21 +1,21 @@
-﻿/* COMPONENTS */
+﻿// COMPONENTS
 @import "../Components/_load-components";
 
-/* COLOURS */
+// COLOURS
 @mixin apply-theme ($normal, $xtra-dark, $xtra-bright, $light) {
 
     body {
         color: $xtra-dark;
     }
-    /* THEME PICKER */
+    // THEME PICKER
     .ctn-theme-picker {
         @include theme-picker-container( $normal );
     }
-    /* WEBSITE HEADER */
+    // WEBSITE HEADER
     .website-header {
         @include website-header( $normal );
     }
-    /* BUTTONS AND LINKS */
+    // BUTTONS AND LINKS 
     .btn-main {
         @include btn-main( $xtra-dark, $light );
     }
@@ -27,7 +27,7 @@
     a.website-links {
         @include link( $xtra-dark );
     }
-    /* CONTAINERS */
+    // CONTAINERS 
     .ctn-main {
         @include ctn-main( $xtra-dark, $light );
     }
@@ -39,7 +39,7 @@
     .ctn-secondary {
         @include ctn-secondary( $normal );
     }
-    /* SLIDER */
+    // SLIDER
     .slide {
         &:before, &:after {
             @include quotations( $xtra-bright );
@@ -53,11 +53,11 @@
             @include slider-nav-a-current( $light, $xtra-bright );
         }
     }
-    /* COLOUR SCHEME */
+    // COLOUR SCHEME
     .colour-scheme {
         @include colour-variant-parts( $normal, $xtra-dark, $xtra-bright, $light);
     }
-    /* FOOTER */
+    // FOOTER 
     footer {
         @include footer-appearance( $light, $xtra-dark );
 

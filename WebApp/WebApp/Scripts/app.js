@@ -1,7 +1,7 @@
 ﻿/*
 THEME PICKER
 *********************************/
-function updateSiteTheme(theme, el) {
+function updateSiteTheme( theme, el ) {
     /// <summary>Updates the theme of the website.</summary>
     /// <param name="theme" type="string">The new theme to change to.</param> 
     /// <param name="el" type="element">The theme picker circle that the user clicked on.</param> 
@@ -15,29 +15,13 @@ function updateSiteTheme(theme, el) {
     el.parentNode.classList.add("active");
 
     // Load the requested theme and apply to the page.
-    switch (theme) {
-        case 'grayscale':
-            document.getElementById('CssTheme').href = '../Content/Grayscale.min.css';
-            break;
-        case 'pop':
-            document.getElementById('CssTheme').href = '../Content/Pop.min.css';
-            break;
-        case 'fun':
-            document.getElementById('CssTheme').href = '../Content/Fun.min.css';
-            break;
-        case 'vintage':
-            document.getElementById('CssTheme').href = '../Content/Vintage.min.css';
-            break;
-        case 'neon':
-            document.getElementById('CssTheme').href = '../Content/Neon.min.css';
-            break;
-        case 'retro':
-            document.getElementById('CssTheme').href = '../Content/Retro.min.css';
-            break;
-        default:
-            document.getElementById('CssTheme').href = '../Content/Retro.min.css';
-            break;
-    }
+    try {        
+        document.getElementById('CssTheme').href = '../Content/' + theme + '.min.css';
+    } catch( err ) {
+        document.getElementById('CssTheme').href = '../Content/Retro.min.css';
+        trackExceptions( "Error while loading theme css. " + err.message );
+        console.log( "Exception at updateSiteTheme() " + err.message );
+    }   
 
     // Send GA tracking data
     trackEvents('Theme button click', 'Theme picker. Theme selected ' + theme);
@@ -46,21 +30,21 @@ function updateSiteTheme(theme, el) {
 /*
 GOOGLE ANALYTICS
 *********************************/
-function trackOutboundLink(action, label) {
+function trackOutboundLink( action, label ) {
     /// <summary>Method to send Google Analytics outbound tracking data.</summary>
     /// <param name="action" type="string">The action that caused this event to trigger.</param> 
     /// <param name="label" type="string">The outbound link details.</param> 
     sendGoogleAnalyticsEventData( 'click', 'outbound', action, label );
 }
 
-function trackEvents(action, label) {
+function trackEvents( action, label ) {
     /// <summary>Method to send Google Analytics interaction events data.</summary>
     /// <param name="action" type="string">The action that caused this event to trigger.</param> 
     /// <param name="label" type="string">The details of the interaction.</param> 
     sendGoogleAnalyticsEventData( 'click', 'events', action, label );
 }
 
-function trackExceptions(error) {
+function trackExceptions( error ) {
     /// <summary>Method to send Google Analytics exception data.</summary>
     /// <param name="error" type="string">The exception message that has been caught.</param> 
     gtag('event', 'exception', {
@@ -69,7 +53,7 @@ function trackExceptions(error) {
     });
 }
 
-function sendGoogleAnalyticsEventData(eventType, category, action, label) {
+function sendGoogleAnalyticsEventData( eventType, category, action, label ) {
     /// <summary>Base method to send Google Analytics event data.</summary>
     /// <param name="eventType" type="string">The type of event.</param> 
     /// <param name="category" type="string">A custom message for the category of this event.</param> 
@@ -80,7 +64,6 @@ function sendGoogleAnalyticsEventData(eventType, category, action, label) {
         'event_action': getLowercase( action ),
         'event_label': getLowercase( label ),
         'transport_type': 'beacon'
-        //'event_callback': function () { document.location = url; }
     });
 }
 
@@ -89,14 +72,14 @@ DID YOU KNOW SLIDER
 *********************************/
 var slideIndex = 0;
 
-function currentSlide(n) {
+function currentSlide( n ) {
     /// <summary>Set the current index of the slider.</summary>
     /// <param name="n" type="number">The slide number requested.</param> 
     showSlides(slideIndex = n);
     trackEvents('Slider nav button click', 'Slider navigation button. Slide number ' + n);
 }
 
-function showSlides(n) {
+function showSlides( n ) {
     /// <summary>Show the requested slide from the slider.</summary>
     /// <param name="n" type="number">The slide number requested.</param> 
     var i;
@@ -115,20 +98,20 @@ function showSlides(n) {
 }
 
 // Default the slider to the first slide on page load.
-showSlides(slideIndex = 1);
+showSlides( slideIndex = 1 );
 
 /*
 MISC
 *********************************/
-function getLowercase(value) {
+function getLowercase( value ) {
     /// <summary>Returns a lower case version of the string supplied.</summary>
     /// <param name="value" type="string">The string that needs to be converted.</param> 
     try {
         return value.toLowerCase();
     }
     catch (ex) {
-        trackExceptions( ex.message );
-        console.log("Exception at getLowercase() " + ex);
+        trackExceptions( "Error while converting " + value + " to lowercase. " + ex.message );
+        console.log("Exception at getLowercase() " + ex.message);
         return value;
     }
 }

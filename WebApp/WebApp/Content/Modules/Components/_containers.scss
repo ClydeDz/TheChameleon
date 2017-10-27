@@ -1,14 +1,14 @@
-﻿/* COMPONENTS */
+﻿// COMPONENTS
 @import "_breakpoints";
 @import "_animation";
 @import "_mobile";
 
-/* FUNCTIONS */
+// FUNCTIONS 
 @function getHexCode( $hex-code ) {
      @return "" + $hex-code;
 }
 
-/* MIXINS */
+// MIXINS
 %wide-container {
 
     @include mobile-bp( $max-width, $even-breakpoint ) {

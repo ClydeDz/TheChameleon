@@ -1,7 +1,7 @@
-﻿/* COMPONENTS */
+﻿// COMPONENTS
 @import "../Components/_animation";
 
-/* Slideshow container */
+// Slideshow container
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -24,7 +24,7 @@
             left: 50px;
             font-size: 50px;
         }
-        /* Caption text */
+        // Caption text
         .text {
             padding: 14px 12px;
             width: 100%;
@@ -37,7 +37,7 @@
     margin: 18px 0;
 }
 
-/* The dots/bullets/indicators */
+// The dots/bullets/indicators
 .dot {
     @include animate-generic( background-color, 0.6s, ease );
     cursor: pointer;

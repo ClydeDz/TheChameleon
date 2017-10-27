@@ -1,8 +1,15 @@
-﻿/* COLOURS */
-/* COMPONENTS */
-/* COMPONENTS */
-/* COMPONENTS */
-/* COMPONENTS */
+﻿@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -15,9 +22,6 @@
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -30,143 +34,130 @@
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
-/* FUNCTIONS */
-/* MIXINS */
-/* COMPONENTS */
-@-webkit-keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
+html body {
+  color: #000000; }
 
-@keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
+html .ctn-theme-picker {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(1, 171, 170, 0.1); }
 
-/* COLOURS */
-/* PARTS IN THE THEME PICKER CIRCLE */
-/* COLOURS */
-html {
-  /* THEME PICKER */
-  /* WEBSITE HEADER */
-  /* BUTTONS AND LINKS */
-  /* CONTAINERS */
-  /* SLIDER */
-  /* COLOUR SCHEME */
-  /* FOOTER */ }
-  html body {
+html .website-header h1 {
+  color: #01abaa; }
+
+html .btn-main {
+  background-color: #fea680;
+  border-color: #fea680;
+  color: #000000; }
+  html .btn-main:hover, html .btn-main:focus {
+    background-color: #fe9467;
     color: #000000; }
-  html .ctn-theme-picker {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid rgba(1, 171, 170, 0.1); }
-  html .website-header h1 {
-    color: #01abaa; }
-  html .btn-main {
-    background-color: #fea680;
-    border-color: #fea680;
-    color: #000000; }
-    html .btn-main:hover, html .btn-main:focus {
-      background-color: #fe9467;
-      color: #000000; }
-  html .btn-inverse {
-    background-color: #000000;
-    border-color: #000000;
+
+html .btn-inverse {
+  background-color: #000000;
+  border-color: #000000;
+  color: #FEDC3D; }
+  html .btn-inverse:hover, html .btn-inverse:focus {
+    background-color: black;
     color: #FEDC3D; }
-    html .btn-inverse:hover, html .btn-inverse:focus {
-      background-color: black;
-      color: #FEDC3D; }
-  html a.website-links {
+
+html a.website-links {
+  color: #000000; }
+  html a.website-links:hover, html a.website-links:focus {
+    color: black;
+    border-bottom-color: #000000; }
+
+html .ctn-main {
+  background-color: #fea680; }
+  html .ctn-main h1, html .ctn-main h2, html .ctn-main h3, html .ctn-main p {
     color: #000000; }
-    html a.website-links:hover, html a.website-links:focus {
-      color: black;
-      border-bottom-color: #000000; }
-  html .ctn-main {
-    background-color: #fea680; }
-    html .ctn-main h1, html .ctn-main h2, html .ctn-main h3, html .ctn-main p {
-      color: #000000; }
-  html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
-    color: #01abaa; }
-  html .ctn-secondary > div {
-    background-color: rgba(1, 120, 120, 0.4); }
-  html .slide:before, html .slide:after {
+
+html .ctn-general h1, html .ctn-general h2, html .ctn-general h3 {
+  color: #01abaa; }
+
+html .ctn-secondary > div {
+  background-color: rgba(1, 120, 120, 0.4); }
+
+html .slide:before, html .slide:after {
+  color: #FEDC3D; }
+
+html .dot {
+  color: #FEDC3D;
+  border: 1px solid #fea680;
+  background-color: #fea680; }
+  html .dot.active {
+    border-color: #FEDC3D;
+    background-color: #FEDC3D; }
+
+html .colour-scheme.variant_1 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #01abaa;
+  color: white; }
+  html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #01c4c3; }
+  html .colour-scheme.variant_1 p:before {
+    content: "#01abaa"; }
+
+html .colour-scheme.variant_2 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #000000;
+  color: white; }
+  html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #0d0d0d; }
+  html .colour-scheme.variant_2 p:before {
+    content: "#000000"; }
+
+html .colour-scheme.variant_3 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #FEDC3D;
+  color: white; }
+  html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #fee156; }
+  html .colour-scheme.variant_3 p:before {
+    content: "#FEDC3D"; }
+
+html .colour-scheme.variant_4 {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background-color: #fea680;
+  color: white; }
+  html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #feb899; }
+  html .colour-scheme.variant_4 p:before {
+    content: "#fea680"; }
+
+html footer {
+  background-color: #000000;
+  color: #fea680; }
+  html footer a, html footer a.website-links {
     color: #FEDC3D; }
-  html .dot {
-    color: #FEDC3D;
-    border: 1px solid #fea680;
-    background-color: #fea680; }
-    html .dot.active {
-      border-color: #FEDC3D;
-      background-color: #FEDC3D; }
-  html .colour-scheme.variant_1 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #01abaa;
-    color: white; }
-    html .colour-scheme.variant_1:hover, html .colour-scheme.variant_1:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #01c4c3; }
-    html .colour-scheme.variant_1 p:before {
-      content: "#01abaa"; }
-  html .colour-scheme.variant_2 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #000000;
-    color: white; }
-    html .colour-scheme.variant_2:hover, html .colour-scheme.variant_2:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #0d0d0d; }
-    html .colour-scheme.variant_2 p:before {
-      content: "#000000"; }
-  html .colour-scheme.variant_3 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #FEDC3D;
-    color: white; }
-    html .colour-scheme.variant_3:hover, html .colour-scheme.variant_3:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #fee156; }
-    html .colour-scheme.variant_3 p:before {
-      content: "#FEDC3D"; }
-  html .colour-scheme.variant_4 {
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-    background-color: #fea680;
-    color: white; }
-    html .colour-scheme.variant_4:hover, html .colour-scheme.variant_4:focus {
-      -webkit-transition: background-color 0.5s ease-in;
-      -moz-transition: background-color 0.5s ease-in;
-      -o-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
-      background-color: #feb899; }
-    html .colour-scheme.variant_4 p:before {
-      content: "#fea680"; }
-  html footer {
-    background-color: #000000;
-    color: #fea680; }
-    html footer a, html footer a.website-links {
-      color: #FEDC3D; }
-      html footer a:hover, html footer a:focus, html footer a.website-links:hover, html footer a.website-links:focus {
-        color: #fed724;
-        border-bottom-color: #FEDC3D; }
+    html footer a:hover, html footer a:focus, html footer a.website-links:hover, html footer a.website-links:focus {
+      color: #fed724;
+      border-bottom-color: #FEDC3D; }
 

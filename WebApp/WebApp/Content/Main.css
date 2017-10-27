@@ -4294,9 +4294,6 @@ td.visible-print {
   td.hidden-print {
     display: none !important; } }
 
-/* COMPONENTS */
-/* COMPONENTS */
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -4309,8 +4306,6 @@ td.visible-print {
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
 .btn-main, .btn-inverse, a.website-links {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -4337,8 +4332,6 @@ a.website-links i.mdi {
   margin-right: 4px;
   font-size: large; }
 
-/* COMPONENTS */
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -4351,10 +4344,6 @@ a.website-links i.mdi {
   to {
     opacity: 1; } }
 
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
-/* FUNCTIONS */
-/* MIXINS */
 .wide-container {
   width: 100%;
   padding-left: 0;
@@ -4411,8 +4400,6 @@ a.website-links i.mdi {
     height: 100%;
     z-index: 2; }
 
-/* COMPONENTS */
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -4425,10 +4412,6 @@ a.website-links i.mdi {
   to {
     opacity: 1; } }
 
-/* COLOURS */
-/* PARTS IN THE THEME PICKER CIRCLE */
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
 .ctn-theme-picker {
   position: fixed;
   z-index: 9999;
@@ -4444,12 +4427,10 @@ a.website-links i.mdi {
     -moz-transition: background-color 0.5s ease-in;
     -o-transition: background-color 0.5s ease-in;
     transition: background-color 0.5s ease-in;
-    /* APPEARANCE OF THE PICKER */
     display: inline-block;
     background-color: transparent;
     padding: 9px 7px;
-    border-top: 3px solid transparent;
-    /* THEMES */ }
+    border-top: 3px solid transparent; }
     .ctn-theme-picker .theme-picker:hover, .ctn-theme-picker .theme-picker:focus {
       -webkit-transition: background-color 0.5s ease-out;
       -moz-transition: background-color 0.5s ease-out;
@@ -4540,9 +4521,6 @@ a.website-links i.mdi {
       .ctn-theme-picker .theme-picker .circle.grayscale > .part_4 {
         background: #b7b7af; }
 
-/* COMPONENTS */
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
 .website-header {
   padding-top: 64px;
   padding-bottom: 18px; }
@@ -4559,7 +4537,6 @@ a.website-links i.mdi {
     border-radius: 60px;
     width: 70px; }
 
-/* COMPONENTS */
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
@@ -4572,15 +4549,13 @@ a.website-links i.mdi {
   to {
     opacity: 1; } }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
   padding: 24px 0 18px 0; }
   .slideshow-container .slide {
-    text-align: center;
-    /* Caption text */ }
+    text-align: center; }
     .slideshow-container .slide:before {
       content: "\201C";
       position: relative;
@@ -4599,7 +4574,6 @@ a.website-links i.mdi {
 .slider-nav {
   margin: 18px 0; }
 
-/* The dots/bullets/indicators */
 .dot {
   -webkit-transition: background-color 0.6s ease;
   -moz-transition: background-color 0.6s ease;
@@ -4619,9 +4593,6 @@ a.website-links i.mdi {
   animation-duration: 1.5s;
   opacity: 1; }
 
-/* COMPONENTS */
-/* COMPONENTS */
-/* BREAKPOINT MIXIN */
 h1, h2, h3 {
   font-weight: 700;
   font-family: "Raleway", sans-serif; }
@@ -4639,7 +4610,6 @@ body {
     body {
       font-size: 18px; } }
 
-/* COMPONENTS */
 footer {
   padding: 18px 0;
   margin-top: 9px; }
