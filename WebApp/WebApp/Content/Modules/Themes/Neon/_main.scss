@@ -1,8 +1,8 @@
 ﻿// COLOURS 
-@import '../../Colours/_neon';
+@import '../../Colours/neon';
 
 // COMPONENTS 
-@import "../_master";
+@import "../master";
 
 html {
     @include apply-theme( $neon_colours... );

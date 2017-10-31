@@ -1,7 +1,7 @@
 ﻿// COMPONENTS
-@import "_breakpoints";
-@import "_animation";
-@import "_mobile";
+@import "breakpoints";
+@import "animation";
+@import "mobile";
 
 // FUNCTIONS 
 @function getHexCode( $hex-code ) {

@@ -1,6 +1,6 @@
 ﻿// COMPONENTS 
-@import "../Components/_breakpoints";
-@import "../Components/_mobile";
+@import "../Components/breakpoints";
+@import "../Components/mobile";
 
 .website-header {
     @include mobile-bp( $max-width, $small-breakpoint ) {

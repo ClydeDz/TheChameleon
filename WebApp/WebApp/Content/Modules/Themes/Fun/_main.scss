@@ -1,8 +1,8 @@
 ﻿// COLOURS
-@import '../../Colours/_fun';
+@import '../../Colours/fun';
 
 // COMPONENTS 
-@import "../_master";
+@import "../master";
 
 html {
     @include apply-theme( $fun_colours... );

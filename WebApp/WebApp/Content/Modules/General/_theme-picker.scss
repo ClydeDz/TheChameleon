@@ -1,7 +1,7 @@
 ﻿// COMPONENTS 
-@import "../Components/_theme-picker";
-@import "../Components/_breakpoints";
-@import "../Components/_mobile";
+@import "../Components/theme-picker";
+@import "../Components/breakpoints";
+@import "../Components/mobile";
 
 .ctn-theme-picker {    
     @include mobile-bp( $max-width, $small-breakpoint ) {

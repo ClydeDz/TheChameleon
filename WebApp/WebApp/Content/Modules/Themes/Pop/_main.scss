@@ -1,8 +1,8 @@
 ﻿// COLOURS 
-@import '../../Colours/_pop';
+@import '../../Colours/pop';
 
 // COMPONENTS 
-@import "../_master";
+@import "../master";
 
 html {
     @include apply-theme( $pop_colours... );

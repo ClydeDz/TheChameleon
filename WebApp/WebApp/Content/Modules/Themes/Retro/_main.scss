@@ -1,8 +1,8 @@
 ﻿// COLOURS 
-@import '../../Colours/_retro';
+@import '../../Colours/retro';
 
 // COMPONENTS
-@import "../_master";
+@import "../master";
 
 html {
     @include apply-theme( $retro_colours... );
