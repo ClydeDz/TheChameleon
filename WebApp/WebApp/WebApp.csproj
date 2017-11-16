@@ -172,6 +172,7 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Banners\chameleon.jpg" />
     <Content Include="Images\Icons\android-chrome-192x192.png" />
     <Content Include="Images\Icons\apple-touch-icon-114x114.png" />
     <Content Include="Images\Icons\apple-touch-icon-120x120.png" />
